@@ -1,0 +1,91 @@
+﻿
+@{
+    ViewBag.Title = "Consulta de Proprietarios";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+@section Scripts{
+
+    <script>
+
+        //criando o programa angular..
+        var appProprietario = angular.module('appProprietario', []);
+        //criando o controller..
+        appProprietario.controller('consultaProprietario',
+            function ($scope, $http) {
+
+                //criando uma função para executar a consulta no controller..
+                $scope.consultar = function () {
+
+                    //executando o método do controller..
+                    $http.get("/Proprietario/ConsultarProprietario")
+                        .then(function (obj) {
+                            //armazenando em variavel..
+                            $scope.Proprietario = obj.data;
+                        })
+                        .catch(function (e) {
+                            $scope.mensagem = e.data;
+                        });
+                };
+            });
+
+
+    </script>
+
+}
+
+    <h4>Consulta de Proprietarios</h4>
+<br />
+
+
+<div ng-app="appProprietario" ng-controller="consultaProprietario">
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <label>Pesquisar Proprietarios</label>
+                    <input type="text" class="form-control"
+                           ng-model="Pesquisa"
+                           placeholder="Digite aqui" />
+                </div>
+                <div class="col-md-4">
+                    <label>Ordenar por:</label>
+                    <select class="form-control" ng-model="Ordenacao">
+                        <option value="">Escolha uma Opção</option>
+                        <option value="IdProprietario">Código</option>
+                        <option value="Nome">Nome do Proprietario</option>
+                    </select>
+                </div>
+
+            </div>
+            <br />
+            <table class="table table-bordered table-striped table-hover"
+                   ng-init="consultar()">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Nome de Proprietario</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr ng-repeat="p in Proprietario | filter : Pesquisa | orderBy : Ordenacao">
+                        <td>{{p.IdProprietario}}</td>
+                        <td>{{p.Nome}}</td>
+                    </tr>
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">
+                            Quantidade de registros:
+                            {{(Proprietarios | filter : Pesquisa).length}}
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </div>
+    </div>
+</div>

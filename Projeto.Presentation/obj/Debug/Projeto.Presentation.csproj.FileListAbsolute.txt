@@ -1,0 +1,339 @@
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\Projeto.Presentation.dll.config
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\Projeto.Presentation.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\Projeto.Presentation.pdb
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\csc.exe
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\csc.exe.config
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\csc.rsp
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\csi.exe
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\csi.exe.config
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\csi.rsp
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.AppContext.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Collections.Immutable.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Console.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Diagnostics.Process.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.IO.Compression.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.IO.FileSystem.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.IO.Pipes.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Reflection.Metadata.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Security.AccessControl.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Security.Claims.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Security.Principal.Windows.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Threading.Thread.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.ValueTuple.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Xml.XmlDocument.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Xml.XPath.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\vbc.exe
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\vbc.exe.config
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\vbc.rsp
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\VBCSCompiler.exe
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\VBCSCompiler.exe.config
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\Microsoft.Web.Infrastructure.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Helpers.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Mvc.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Razor.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Webpages.Deployment.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Webpages.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Webpages.Razor.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Razor.xml
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Webpages.xml
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Webpages.Deployment.xml
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Webpages.Razor.xml
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Helpers.xml
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Mvc.xml
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\pt-br\System.Web.Razor.resources.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\pt-br\System.Web.Webpages.resources.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\pt-br\System.Web.Webpages.Deployment.resources.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\pt-br\System.Web.Webpages.Razor.resources.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\pt-br\System.Web.Helpers.resources.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\pt-br\System.Web.Mvc.resources.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\obj\Debug\Projeto.Presentation.csprojAssemblyReference.cache
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\obj\Debug\Projeto.Presentation.csproj.CoreCompileInputs.cache
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\obj\Debug\Projeto.Presentation.csproj.CopyComplete
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\obj\Debug\Projeto.Presentation.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\obj\Debug\Projeto.Presentation.pdb
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\EntityFramework.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\EntityFramework.SqlServer.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\EntityFramework.xml
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\EntityFramework.SqlServer.xml
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\Projeto.Presentation.dll.config
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\Projeto.Presentation.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\Projeto.Presentation.pdb
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\csc.exe
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\csc.exe.config
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\csc.rsp
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\csi.exe
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\csi.exe.config
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\csi.rsp
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.AppContext.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Collections.Immutable.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Console.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Diagnostics.Process.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.IO.Compression.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.IO.FileSystem.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.IO.Pipes.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Reflection.Metadata.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Security.AccessControl.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Security.Claims.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Security.Principal.Windows.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Threading.Thread.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.ValueTuple.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Xml.XmlDocument.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Xml.XPath.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\vbc.exe
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\vbc.exe.config
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\vbc.rsp
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\VBCSCompiler.exe
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\VBCSCompiler.exe.config
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\EntityFramework.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\EntityFramework.SqlServer.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\Microsoft.Web.Infrastructure.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Helpers.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Mvc.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Razor.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Webpages.Deployment.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Webpages.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Webpages.Razor.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\EntityFramework.xml
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\EntityFramework.SqlServer.xml
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Razor.xml
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Webpages.xml
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Webpages.Deployment.xml
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Webpages.Razor.xml
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Helpers.xml
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Mvc.xml
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\pt-br\System.Web.Razor.resources.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\pt-br\System.Web.Webpages.resources.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\pt-br\System.Web.Webpages.Deployment.resources.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\pt-br\System.Web.Webpages.Razor.resources.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\pt-br\System.Web.Helpers.resources.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\pt-br\System.Web.Mvc.resources.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\obj\Debug\Projeto.Presentation.csprojAssemblyReference.cache
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\obj\Debug\Projeto.Presentation.csproj.CoreCompileInputs.cache
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\obj\Debug\Projeto.Presentation.csproj.CopyComplete
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\obj\Debug\Projeto.Presentation.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\obj\Debug\Projeto.Presentation.pdb
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\Projeto.Entities.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\Projeto.Repository.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\Projeto.Entities.pdb
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\Projeto.Repository.pdb
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Presentation\bin\Projeto.Repository.dll.config
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\Projeto.Presentation.dll.config
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\Projeto.Presentation.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\Projeto.Presentation.pdb
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\csc.exe
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\csc.exe.config
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\csc.rsp
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\csi.exe
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\csi.exe.config
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\csi.rsp
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.AppContext.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Collections.Immutable.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Console.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Diagnostics.Process.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.IO.Compression.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.IO.FileSystem.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.IO.Pipes.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Reflection.Metadata.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Security.AccessControl.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Security.Claims.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Security.Principal.Windows.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Threading.Thread.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.ValueTuple.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Xml.XmlDocument.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Xml.XPath.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\vbc.exe
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\vbc.exe.config
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\vbc.rsp
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\VBCSCompiler.exe
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\roslyn\VBCSCompiler.exe.config
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\EntityFramework.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\EntityFramework.SqlServer.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\Microsoft.Web.Infrastructure.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\Projeto.Entities.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\Projeto.Repository.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Helpers.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Mvc.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Razor.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Webpages.Deployment.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Webpages.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Webpages.Razor.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\Projeto.Entities.pdb
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\Projeto.Repository.pdb
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\Projeto.Repository.dll.config
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\EntityFramework.xml
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\EntityFramework.SqlServer.xml
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Razor.xml
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Webpages.xml
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Webpages.Deployment.xml
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Webpages.Razor.xml
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Helpers.xml
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\System.Web.Mvc.xml
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\pt-br\System.Web.Razor.resources.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\pt-br\System.Web.Webpages.resources.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\pt-br\System.Web.Webpages.Deployment.resources.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\pt-br\System.Web.Webpages.Razor.resources.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\pt-br\System.Web.Helpers.resources.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\bin\pt-br\System.Web.Mvc.resources.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\obj\Debug\Projeto.Presentation.csprojAssemblyReference.cache
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\obj\Debug\Projeto.Presentation.csproj.CoreCompileInputs.cache
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\obj\Debug\Projeto.Presentation.csproj.CopyComplete
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\obj\Debug\Projeto.Presentation.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Presentation\obj\Debug\Projeto.Presentation.pdb
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\Projeto.Presentation.dll.config
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\Projeto.Presentation.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\Projeto.Presentation.pdb
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\csc.exe
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\csc.exe.config
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\csc.rsp
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\csi.exe
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\csi.exe.config
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\csi.rsp
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\System.AppContext.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\System.Collections.Immutable.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\System.Console.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\System.Diagnostics.Process.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\System.IO.Compression.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\System.IO.FileSystem.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\System.IO.Pipes.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\System.Reflection.Metadata.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\System.Security.AccessControl.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\System.Security.Claims.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\System.Security.Principal.Windows.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\System.Threading.Thread.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\System.ValueTuple.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\System.Xml.XmlDocument.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\System.Xml.XPath.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\vbc.exe
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\vbc.exe.config
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\vbc.rsp
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\VBCSCompiler.exe
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\roslyn\VBCSCompiler.exe.config
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\EntityFramework.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\EntityFramework.SqlServer.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\Microsoft.Web.Infrastructure.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\Projeto.Entities.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\Projeto.Repository.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\System.Web.Helpers.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\System.Web.Mvc.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\System.Web.Razor.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\System.Web.Webpages.Deployment.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\System.Web.Webpages.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\System.Web.Webpages.Razor.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\Projeto.Entities.pdb
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\Projeto.Repository.pdb
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\Projeto.Repository.dll.config
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\EntityFramework.xml
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\EntityFramework.SqlServer.xml
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\System.Web.Razor.xml
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\System.Web.Webpages.xml
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\System.Web.Webpages.Deployment.xml
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\System.Web.Webpages.Razor.xml
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\System.Web.Helpers.xml
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\System.Web.Mvc.xml
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\pt-br\System.Web.Razor.resources.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\pt-br\System.Web.Webpages.resources.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\pt-br\System.Web.Webpages.Deployment.resources.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\pt-br\System.Web.Webpages.Razor.resources.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\pt-br\System.Web.Helpers.resources.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\pt-br\System.Web.Mvc.resources.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\obj\Debug\Projeto.Presentation.csprojAssemblyReference.cache
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\obj\Debug\Projeto.Presentation.csproj.CoreCompileInputs.cache
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\obj\Debug\Projeto.Presentation.csproj.CopyComplete
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\obj\Debug\Projeto.Presentation.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\obj\Debug\Projeto.Presentation.pdb

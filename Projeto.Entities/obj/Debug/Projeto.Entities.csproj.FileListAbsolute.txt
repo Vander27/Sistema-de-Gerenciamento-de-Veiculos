@@ -1,0 +1,18 @@
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Entities\bin\Debug\Projeto.Entities.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Entities\bin\Debug\Projeto.Entities.pdb
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Entities\obj\Debug\Projeto.Entities.csproj.CoreCompileInputs.cache
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Entities\obj\Debug\Projeto.Entities.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Entities\obj\Debug\Projeto.Entities.pdb
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Entities\obj\Debug\Projeto.Entities.csprojAssemblyReference.cache
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Entities\bin\Debug\Projeto.Entities.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Entities\bin\Debug\Projeto.Entities.pdb
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Entities\obj\Debug\Projeto.Entities.csprojAssemblyReference.cache
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Entities\obj\Debug\Projeto.Entities.csproj.CoreCompileInputs.cache
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Entities\obj\Debug\Projeto.Entities.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Entities\obj\Debug\Projeto.Entities.pdb
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Entities\bin\Debug\Projeto.Entities.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Entities\bin\Debug\Projeto.Entities.pdb
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Entities\obj\Debug\Projeto.Entities.csprojAssemblyReference.cache
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Entities\obj\Debug\Projeto.Entities.csproj.CoreCompileInputs.cache
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Entities\obj\Debug\Projeto.Entities.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Entities\obj\Debug\Projeto.Entities.pdb

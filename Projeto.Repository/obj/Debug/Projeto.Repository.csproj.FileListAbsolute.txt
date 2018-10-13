@@ -1,0 +1,42 @@
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Repository\bin\Debug\Projeto.Repository.dll.config
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Repository\bin\Debug\Projeto.Repository.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Repository\bin\Debug\Projeto.Repository.pdb
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Repository\bin\Debug\EntityFramework.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Repository\bin\Debug\Projeto.Entities.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Repository\bin\Debug\Projeto.Entities.pdb
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Repository\bin\Debug\EntityFramework.xml
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Repository\obj\Debug\Projeto.Repository.csprojAssemblyReference.cache
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Repository\obj\Debug\Projeto.Repository.csproj.CoreCompileInputs.cache
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Repository\obj\Debug\Projeto.Repository.csproj.CopyComplete
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Repository\obj\Debug\Projeto.Repository.dll
+C:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Repository\obj\Debug\Projeto.Repository.pdb
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Repository\bin\Debug\Projeto.Repository.dll.config
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Repository\bin\Debug\Projeto.Repository.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Repository\bin\Debug\Projeto.Repository.pdb
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Repository\bin\Debug\EntityFramework.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Repository\bin\Debug\EntityFramework.SqlServer.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Repository\bin\Debug\Projeto.Entities.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Repository\bin\Debug\Projeto.Entities.pdb
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Repository\bin\Debug\EntityFramework.xml
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Repository\bin\Debug\EntityFramework.SqlServer.xml
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Repository\obj\Debug\Projeto.Repository.csprojAssemblyReference.cache
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Repository\obj\Debug\Projeto.Repository.csproj.CoreCompileInputs.cache
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Repository\obj\Debug\Projeto.Repository.csproj.CopyComplete
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Repository\obj\Debug\Projeto.Repository.dll
+E:\PROJETO GIT\DIA\OUTUBRO\Aula13 a Aula 15\Sistema de Controle de Livros\Projeto.Repository\obj\Debug\Projeto.Repository.pdb
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Repository\obj\Debug\Projeto.Repository.csprojAssemblyReference.cache
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Repository\obj\Debug\Projeto.Repository.csproj.CoreCompileInputs.cache
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Repository\obj\Debug\Projeto.Repository.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Repository\obj\Debug\Projeto.Repository.pdb
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Repository\bin\Debug\Projeto.Repository.dll.config
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Repository\bin\Debug\Projeto.Repository.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Repository\bin\Debug\Projeto.Repository.pdb
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Repository\bin\Debug\EntityFramework.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Repository\bin\Debug\EntityFramework.SqlServer.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Repository\bin\Debug\Projeto.Entities.dll
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Repository\bin\Debug\Projeto.Entities.pdb
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Repository\bin\Debug\EntityFramework.xml
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Repository\bin\Debug\EntityFramework.SqlServer.xml
+E:\PROJETO GIT\SITE1\Sistema de Controle de Livros\Projeto.Repository\obj\Debug\Projeto.Repository.csproj.CopyComplete

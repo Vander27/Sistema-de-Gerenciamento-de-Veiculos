@@ -1,0 +1,91 @@
+﻿
+@{
+    ViewBag.Title = "Consulta de Motoristas";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+@section Scripts{
+
+    <script>
+
+        //criando o programa angular..
+        var appMotorista = angular.module('appMotorista', []);
+        //criando o controller..
+        appMotorista.controller('consultarMotorista',
+            function ($scope, $http) {
+
+                //criando uma função para executar a consulta no controller..
+                $scope.consultar = function () {
+
+                    //executando o método do controller..
+                    $http.get("/Motorista/ConsultarMotoristas")
+                        .then(function (obj) {
+                            //armazenando em variavel..
+                            $scope.Motoristas = obj.data;
+                        })
+                        .catch(function (e) {
+                            $scope.mensagem = e.data;
+                        });
+                };
+            });
+
+
+    </script>
+
+}
+
+<h4>Consulta de Motoristas</h4>
+<br />
+
+
+<div ng-app="appMotorista" ng-controller="consultarMotorista">
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <label>Pesquisar Motoristas</label>
+                    <input type="text" class="form-control"
+                           ng-model="Pesquisa"
+                           placeholder="Digite aqui" />
+                </div>
+                <div class="col-md-4">
+                    <label>Ordenar por:</label>
+                    <select class="form-control" ng-model="Ordenacao">
+                        <option value="">Escolha uma Opção</option>
+                        <option value="IdMotorista">Código</option>
+                        <option value="Nome">Nome do Motorista</option>
+                    </select>
+                </div>
+
+            </div>
+            <br />
+            <table class="table table-bordered table-striped table-hover"
+                   ng-init="consultar()">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Nome de Motorista</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr ng-repeat="m in Motoristas | filter : Pesquisa | orderBy : Ordenacao">
+                        <td>{{m.IdMotorista}}</td>
+                        <td>{{m.Nome}}</td>
+                    </tr>
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">
+                            Quantidade de registros:
+                            {{(Motoristas | filter : Pesquisa).length}}
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </div>
+    </div>
+</div>
