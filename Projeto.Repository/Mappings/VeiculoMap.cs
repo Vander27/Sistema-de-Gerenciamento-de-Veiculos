@@ -26,7 +26,7 @@ namespace Projeto.Repository.Mappings
 
             Property(v => v.Modelo)
                .HasColumnName("Modelo")
-               .HasMaxLength(100)
+               .HasMaxLength(50)
                .IsRequired();
 
             Property(v => v.Marca)
@@ -34,31 +34,15 @@ namespace Projeto.Repository.Mappings
                .HasMaxLength(50)
                .IsRequired();
 
-            Property(v => v.Ano)
-               .HasColumnName("Ano")
-               .IsRequired();
 
             Property(v => v.Placa)
                .HasColumnName("Placa")
                .HasMaxLength(50)
                .IsRequired();
 
-            Property(v => v.Cor)
-               .HasColumnName("Cor")
-               .HasMaxLength(50)
-               .IsRequired();
-
-            Property(v => v.KmInicial)
-               .HasColumnName("KmInicial")
-               .IsRequired();
-
-            Property(v => v.KmFinal)
-              .HasColumnName("KmFinal")
-              .IsRequired();
-
             Property(v => v.Foto)
               .HasColumnName("Foto")
-              .HasMaxLength(50)
+              .HasMaxLength(500)
               .IsRequired();
 
             Property(v => v.IdMotorista)
@@ -74,14 +58,18 @@ namespace Projeto.Repository.Mappings
 
             HasRequired(v => v.Motorista) // Veiculo tem 1 Motorista..
                 .WithMany(m => m.Veiculos) // Motorista tem muitos Veiculos..
-                .HasForeignKey(v => v.IdMotorista); //Chave estrangeira
+                .HasForeignKey(v => v.IdMotorista)
+                .WillCascadeOnDelete(false);//Chave estrangeira
+
 
             //Mapear a chave estrangeira com a..
             //tabela do Proprietario..
 
             HasRequired(v => v.Proprietario) // Veiculo tem 1 Proprietario..
                .WithMany(p => p.Veiculos) // Proprietario tem muitos Veiculos..
-               .HasForeignKey(v => v.IdProprietario); //Chave estrangeira
-        }
+               .HasForeignKey(v => v.IdProprietario)
+               .WillCascadeOnDelete(false);//Chave estrangeira
+
+        }       
     }
 }

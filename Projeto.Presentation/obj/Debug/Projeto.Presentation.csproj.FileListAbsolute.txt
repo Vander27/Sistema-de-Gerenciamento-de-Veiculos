@@ -337,3 +337,6 @@ E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\obj\Deb
 E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\obj\Debug\Projeto.Presentation.csproj.CopyComplete
 E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\obj\Debug\Projeto.Presentation.dll
 E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\obj\Debug\Projeto.Presentation.pdb
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\itextsharp.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\itextsharp.xmlworker.dll
+E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Presentation\bin\itextsharp.xml

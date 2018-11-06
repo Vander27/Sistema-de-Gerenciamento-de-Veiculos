@@ -11,11 +11,7 @@ namespace Projeto.Entities
         public int IdVeiculo { get; set; }
         public string Modelo { get; set; }
         public string Marca { get; set; }
-        public int Ano { get; set; }
         public string Placa { get; set; }
-        public string Cor { get; set; }
-        public int KmInicial { get; set; }
-        public int KmFinal { get; set; }
         public string Foto { get; set; }
 
         //chaves estrangeiras..
@@ -31,22 +27,19 @@ namespace Projeto.Entities
 
         }
 
-        public Veiculo(int idVeiculo, string modelo, string marca, int ano, string placa, string cor, int kmInicial, int kmFinal, string foto)
+        public Veiculo(int idVeiculo, string modelo, string marca, string placa, string foto)
         {
             IdVeiculo = idVeiculo;
             Modelo = modelo;
             Marca = marca;
-            Ano = ano;
             Placa = placa;
-            Cor = cor;
-            KmInicial = kmInicial;
-            KmFinal = kmFinal;
             Foto = foto;
         }
 
+        
         public override string ToString()
         {
-            return $"Id: {IdVeiculo}, Modelo: {Modelo}, Marca: {Marca}, Ano: {Ano}, Pçaca: {Placa}, Cor: {Cor}, KmInicial: {KmInicial}, KmFinal: {KmFinal}";
+            return $"Id: {IdVeiculo}, Modelo: {Modelo}, Marca: {Marca}, Placa: {Placa}, Foto: {Foto}";
 
         }
     }

@@ -8,6 +8,8 @@ using Projeto.Entities;
 using Projeto.Repository.Persistence;
 using System.Collections;
 using System.Net;
+using System.Text;
+using Projeto.Presentation.Utils;
 
 namespace Projeto.Presentation.Controllers
 {
@@ -77,7 +79,7 @@ namespace Projeto.Presentation.Controllers
 
 
         //método para retornar a consulta de Proprietario para o Angular..
-        public JsonResult ConsultarProprietario()
+        public JsonResult ConsultarProprietarios()
         {
             try
             {
@@ -104,6 +106,136 @@ namespace Projeto.Presentation.Controllers
                 return Json(e.Message, JsonRequestBehavior.AllowGet);
             }
         }
+
+
+        //método para retornar  1 Proprietario pelo id..
+        public JsonResult ObterProprietario(int idProprietario)
+        {
+            try
+            {
+                //buscar 1 Proprietario no banco de dados pelo id..
+                ProprietarioRepository rep = new ProprietarioRepository();
+                Proprietario p = rep.FindById(idProprietario);
+
+                //retornando para a página..
+                ProprietarioConsultaViewModel model = new ProprietarioConsultaViewModel();
+                model.IdProprietario = p.IdProprietario;
+                model.Nome = p.Nome;
+
+                //enviando para a página..
+                return Json(model, JsonRequestBehavior.AllowGet);
+            }
+            catch (Exception e)
+            {
+                //retornar mensagem de erro..
+                return Json(e.Message, JsonRequestBehavior.AllowGet);
+            }
+        }
+
+        //metodo para excluir um proprietario..
+        public JsonResult ExcluirProprietario(int idProprietario)
+        {
+            try
+            {
+                //buscar o Proprietario na base de dados pelo id..
+                ProprietarioRepository rep = new ProprietarioRepository();
+                int qtdVeiculos = rep.QtdVeiculos(idProprietario);
+
+                if (qtdVeiculos > 0)
+                {
+                    return Json($"O Proprietário não pode ser excluído, pois possui {qtdVeiculos} veículos cadastrados.",
+                        JsonRequestBehavior.AllowGet);
+                }
+                else
+                {
+                    Proprietario p = rep.FindById(idProprietario);
+
+                    //excluindo o Proprietario..
+                    rep.Delete(p);
+
+                    //retornando mensagem de sucesso..
+                    return Json($"Proprietario {p.Nome}, excluído com sucesso.",
+                    JsonRequestBehavior.AllowGet);
+                }
+                
+            }
+            catch (Exception e)
+            {
+
+                return Json(e.Message, JsonRequestBehavior.AllowGet);
+            }
+        }
+
+        //método para atualizar proprietario..
+        public JsonResult AtualizarProprietario(ProprietarioEdicaoViewModel model)
+        {
+            try
+            {
+                //criando um objeto da classe de entidade..
+                Proprietario p = new Proprietario();
+                p.IdProprietario = model.IdProprietario;
+                p.Nome = model.Nome;
+
+                ProprietarioRepository rep = new ProprietarioRepository();
+                rep.Update(p); //atualizando..
+
+                return Json($"Proprietario {p.Nome}, atualizado com sucesso.");
+            }
+            catch (Exception e)
+            {
+
+                return Json(e.Message);
+            }
+        }
+
+
+
+        //método para retornar o relatorio de Proprietarios..
+        public void Relatorio()
+        {
+            //criando o conteudo do relatorio..
+            StringBuilder conteudo = new StringBuilder();
+
+            conteudo.Append("<h1 class='titulo'>Relatório de Proprietários</h1>");
+            conteudo.Append($"<p>Relatório gerado em: {DateTime.Now} </p>");
+            conteudo.Append("<br/>");
+
+            conteudo.Append("<table>");
+            conteudo.Append("<tr>");
+            conteudo.Append("<th>Código do Proprietário</th>");
+            conteudo.Append("<th>Nome do Proprietário</th>");
+            conteudo.Append("</tr>");
+
+            ProprietarioRepository rep = new ProprietarioRepository();
+
+            foreach (Proprietario p in rep.FindAll())
+            {
+                conteudo.Append("<tr>");
+                conteudo.Append($"<td>{p.IdProprietario}</td>");
+                conteudo.Append($"<td>{p.Nome}</td>");
+                conteudo.Append("</tr>");
+            }
+
+            conteudo.Append("</table>");
+
+            //buscando o arquivo CSS..
+            var css = Server.MapPath("/css/relatorio.css");
+
+            //transformando o conteudo em arquivo PDF..
+            ReportsUtil util = new ReportsUtil();
+            byte[] pdf = util.GetPDF(conteudo.ToString(), css);
+
+            //Download..
+            Response.Clear();
+            Response.ContentType = "application/pdf";
+            Response.AddHeader("content-disposition", "attachment; filename=relatorio.pdf");
+            Response.Cache.SetCacheability(HttpCacheability.NoCache);
+
+            Response.BinaryWrite(pdf);
+            Response.End();
+        }
+
+
 
     }
 }

@@ -61,18 +61,20 @@
 
 
 
-<h4>Formulário de Cadastro do Proprietario</h4>
+<h4>Formulário de Cadastro do Proprietário</h4>
 <br />
 
-<div ng-app="appProprietario" ng-controller="cadastroProprietario">
+<div class="row" ng-app="appProprietario" ng-controller="cadastroProprietario">
+    <div class="col-md-4">
 
-    <div class="row">
-        <div class="col-md-4">
+       
 
-            <label>Nome do Proprietario:</label>
+
+            <label>Nome do Proprietário:</label>
             <input type="text" class="form-control"
                    placeholder="Digite aqui"
                    ng-model="model.Nome" />
+
             <div>
                 <strong class="text-danger">{{ErroNome}}</strong>
             </div>
@@ -80,13 +82,12 @@
 
             <button class="btn btn-success"
                     ng-click="cadastrar()">
-                Cadastrar Proprietario
+                Cadastrar Proprietário
             </button>
             <br />
             <br />
 
             <strong>{{mensagem}}</strong>
 
-        </div>
     </div>
 </div>

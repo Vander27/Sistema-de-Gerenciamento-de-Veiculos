@@ -26,7 +26,7 @@ namespace Projeto.Repository.Mappings
 
             Property(p => p.Nome)
                .HasColumnName("Nome")
-               .HasMaxLength(100)
+               .HasMaxLength(50)
                .IsRequired();
 
 
