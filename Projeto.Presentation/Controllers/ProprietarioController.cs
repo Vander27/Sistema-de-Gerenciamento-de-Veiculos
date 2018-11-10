@@ -27,6 +27,27 @@ namespace Projeto.Presentation.Controllers
             return View();
         }
 
+        // GET: Proprietario/Sobre
+        public ActionResult Sobre()
+        {
+            return View();
+        }
+
+
+        // GET: Proprietario/Serviços
+        public ActionResult Servico()
+        {
+            return View();
+        }
+
+        
+        // GET: Proprietario/Contato
+        public ActionResult Contato()
+        {
+            return View();
+        }
+
+
         //JsonResult -> Receber chamadas AJAX (javascript)
         public JsonResult CadastrarProprietario(ProprietarioCadastroViewModel model)
         {

@@ -11,7 +11,7 @@ namespace Projeto.Presentation.Models
 
         [MinLength(3, ErrorMessage = "Informe no mínimo {1} caraxcteres.")]
         [MaxLength(50, ErrorMessage = "Informe no máximo {1} caracteres.")]
-        [Required(ErrorMessage = "Informe o nome do proprietario.")]
+        [Required(ErrorMessage = "Informe o nome da Empresa.")]
         public string Nome { get; set; }
     }
 }

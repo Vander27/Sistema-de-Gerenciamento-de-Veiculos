@@ -80,7 +80,7 @@
 
 <div class="row">
     <div class="col-md-6">
-        <h4><marquee>Consulta de Proprietários</marquee></h4>
+        <h4><marquee>Consulta de Empresa</marquee></h4>
     </div>
     <div class="col-md-6 text-right">
         <a href="/Proprietario/Relatorio" class="btn btn-dark">
@@ -105,7 +105,7 @@
 
             <div class="row">
                 <div class="col-md-4">
-                    <label>Pesquisar Proprietários</label>
+                    <label>Pesquisar Empresas</label>
                     <input type="text" class="form-control"
                            ng-model="Pesquisa"
                            placeholder="Digite aqui" />
@@ -115,7 +115,7 @@
                     <select class="form-control" ng-model="Ordenacao">
                         <option value="">Escolha uma Opção</option>
                         <option value="IdProprietario">Código</option>
-                        <option value="Nome">Nome do Proprietário</option>
+                        <option value="Nome">Nome da Empresa</option>
                     </select>
                 </div>
             </div>
@@ -127,7 +127,7 @@
                 <thead>
                     <tr>
                         <th>Código</th>
-                        <th>Nome do Proprietário</th>
+                        <th>Nome da Empresa</th>
                         <th>Operações</th>
                     </tr>
                 </thead>
@@ -169,17 +169,17 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header bg-primary">
-                            <h4 class="text-white">Atualizar Proprietário</h4>
+                            <h4 class="text-white">Atualizar Empresa</h4>
                         </div>
                         <div class="modal-body">
 
-                            <label>Código do Proprietário:</label>
+                            <label>Código da Empresa:</label>
                             <input type="text" class="form-control"
                                    readonly="readonly"
                                    ng-model="proprietario.IdProprietario" />
                             <br />
 
-                            <label>Nome do Proprietário:</label>
+                            <label>Nome da Empresa:</label>
                             <input type="text" class="form-control"
                                    ng-model="proprietario.Nome" />
                             <br />
@@ -202,18 +202,18 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header bg-danger">
-                            <h4 class="text-white">Excluir Proprietário</h4>
+                            <h4 class="text-white">Excluir Empresa</h4>
                         </div>
                         <div class="modal-body">
 
                             <p>
-                                Deseja realmente excluir este Proprietário?
+                                Deseja realmente excluir esta Empresa?
                             </p>
 
-                            Código do Proprietário: <strong>{{proprietario.IdProprietario}}</strong>
+                            Código da Empresa: <strong>{{proprietario.IdProprietario}}</strong>
                             <br />
 
-                            Nome do Proprietário: <strong>{{proprietario.Nome}}</strong>
+                            Nome da Empresa: <strong>{{proprietario.Nome}}</strong>
                             <br />
 
                         </div>

@@ -141,7 +141,7 @@
                                     <br />
                                     Motorista: {{v.NomeMotorista}}
                                     <br />
-                                    Proprietário: {{v.NomeProprietario}}
+                                    Empresa: {{v.NomeProprietario}}
                                     <br />
                                 </div>
                             </div>
@@ -216,7 +216,7 @@
                                 </select>
                                 <br />
 
-                                <label>Selecione o Proprietário:</label>
+                                <label>Selecione a Empresa:</label>
                                 <select class="form-control" ng-model="veiculo.IdProprietario" ng-init="consultarProprietarios()">
                                     <option value="">Escolha uma Opção</option>
                                     <option value="{{p.IdProprietario}}" ng-repeat="p in proprietarios"

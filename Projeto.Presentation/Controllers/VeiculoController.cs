@@ -185,6 +185,7 @@ namespace Projeto.Presentation.Controllers
                 v.Modelo = model.Modelo;
                 v.Marca = model.Marca;
                 v.Placa = model.Placa;
+                v.Foto = model.Foto;
                 v.IdMotorista = model.IdMotorista;
                 v.IdProprietario = model.IdProprietario;
 

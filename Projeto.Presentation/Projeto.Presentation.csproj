@@ -1616,6 +1616,9 @@
     <Content Include="Views\Veiculo\Cadastro.cshtml" />
     <Content Include="Views\Veiculo\Consulta.cshtml" />
     <Content Include="Scripts\angular.min.js.map" />
+    <Content Include="Views\Proprietario\Sobre.cshtml" />
+    <Content Include="Views\Proprietario\Servico.cshtml" />
+    <Content Include="Views\Proprietario\Contato.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -36,7 +36,7 @@ namespace Projeto.Presentation.Models
         public int IdMotorista { get; set; }
 
     
-        [Required(ErrorMessage = "Selecione o Proprietário do veículo.")]
+        [Required(ErrorMessage = "Selecione a Empresa do veículo.")]
         public int IdProprietario { get; set; }
     }
 }
