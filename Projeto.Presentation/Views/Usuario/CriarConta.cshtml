@@ -1,0 +1,132 @@
+﻿
+@{
+    ViewBag.Title = "Criar Conta";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+
+@section Scripts{
+    <script>
+
+        //criando e dando um nome a um programa angular
+        var appUsuario = angular.module('appUsuario', []);
+        //criando um controller para realizar o cadastro do ..
+        appUsuario.controller('cadastroUsuario',
+            function ($scope, $http) {
+
+                //declarar uma variável para resgatar o valor
+                //digitado no campo 'nome do '
+
+                $scope.model = {//Json
+                    Nome: '' //vazio..
+                    
+                };
+
+                //criando uma função que será executada
+                //quando o botão de cadastro for clicado..
+                $scope.cadastrar = function () {
+
+                    //imprimir mensagem..
+                    $scope.mensagem = "Processando, aguarde...";
+
+                    //requisição AJAX ao controller..
+                    $http.post('/Usuario/CadastrarUsuario', $scope.model)
+                        .then(function (obj) {
+
+                            //imprimir mensagem de sucesso..
+                            $scope.mensagem = obj.data;
+                            //limpar o conteudo do campo..
+                            $scope.model.Nome = "";
+                            $scope.ErroNome = "";
+                            $scope.model.Email = "";
+                            $scope.ErroEmail = "";
+                            $scope.model.Senha = "";
+                            $scope.ErroSenha = "";
+                        })
+                        .catch(function (e) {
+
+                            if (e.status == 400) { //BadRequest
+                                //armazenar o erro do campo nome..
+                                $scope.ErroNome = e.data.Nome;
+                                $scope.mensagem = "";
+                                $scope.ErroEmail = e.data.Email;
+                                $scope.mensagem = "";
+                                $scope.ErroSenha = e.data.Senha;
+                                $scope.mensagem = "";
+                            }
+                            else {
+                                //imprimir mensagem de erro..
+                                $scope.mensagem = "Erro: " + e.data;
+                            }
+
+                        });
+                };
+
+            });
+
+    </script>
+
+}
+
+
+
+
+<link href="~/css/central.css" rel="stylesheet" />
+<link href="~/Content/centralcontente.css" rel="stylesheet" />
+
+<div class="row" ng-app="appUsuario" ng-controller="cadastroUsuario">
+    <div class="container">
+
+        <a class="/Usuario/Autenticar" id="paralogin"></a>
+
+        <div class="content">
+
+            <!--FORMULÁRIO DE CADASTRO-->
+            <div id="cadastro">
+                <form method="post" action="">
+                    <h1>Cadastro</h1>
+
+                    <p>
+                        <label for="Nome">Seu nome</label>
+                        <input id="Nome" name="Nome" required="required" type="text" placeholder="nome"
+                               ng-model="model.Nome" />
+                        <div>
+                            <strong class="text-danger">{{ErroNome}}</strong>
+                        </div>
+                    </p>
+
+                    <p>
+                        <label for="Email">Seu e-mail</label>
+                        <input id="Email" name="Email" required="required" type="email" placeholder="contato@htmlecsspro.com"
+                               ng-model="model.Email" />
+                        <div>
+                            <strong class="text-danger">{{ErroEmail}}</strong>
+                        </div>
+                    </p>
+
+                    <p>
+                        <label for="Senha">Sua senha</label>
+                        <input id="Senha" name="Senha" required="required" type="password" placeholder="ex. 1234"
+                               ng-model="model.Senha" />
+                        <div>
+                            <strong class="text-danger">{{ErroSenha}}</strong>
+                        </div>
+
+                    </p>
+
+                    <p>
+                        <input type="submit" ng-click="cadastrar()" value="Cadastrar" />
+                    </p>
+
+                    <strong>{{mensagem}}</strong>
+
+                    <p class="/Usuario/Autenticar">
+                        Já tem conta?
+                        <a href="/Usuario/Autenticar"> Ir para Login </a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -67,27 +67,35 @@
 <div class="row" ng-app="appProprietario" ng-controller="cadastroProprietario">
     <div class="col-md-4">
 
-       
+
 
 
         <label>Nome do Empresa:</label>
-            <input type="text" class="form-control"
-                   placeholder="Digite aqui"
-                   ng-model="model.Nome" />
+        <input type="text" class="form-control"
+               placeholder="Digite aqui"
+               ng-model="model.Nome" />
+        <div>
+            <strong class="text-danger">{{ErroNome}}</strong>
+        </div>
+        <br />
 
-            <div>
-                <strong class="text-danger">{{ErroNome}}</strong>
-            </div>
-            <br />
+        <label>CNPJ:</label>
+        <input type="text" class="form-control"
+               placeholder="Digite aqui"
+               ng-model="model.Cnpj" />
+        <div>
+            <strong class="text-danger">{{ErroCnpj}}</strong>
+        </div>
+        <br />
 
-            <button class="btn btn-success"
-                    ng-click="cadastrar()">
-                Cadastrar Empresa
-            </button>
-            <br />
-            <br />
+        <button class="btn btn-success"
+                ng-click="cadastrar()">
+            Cadastrar Empresa
+        </button>
+        <br />
+        <br />
 
-            <strong>{{mensagem}}</strong>
+        <strong>{{mensagem}}</strong>
 
     </div>
 </div>

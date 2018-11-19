@@ -22,3 +22,9 @@ E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Entities\obj\Debug\P
 E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Entities\obj\Debug\Projeto.Entities.csproj.CoreCompileInputs.cache
 E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Entities\obj\Debug\Projeto.Entities.dll
 E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Entities\obj\Debug\Projeto.Entities.pdb
+E:\TESTANDO\Sistema-de-Controle-de-Veiculos\Projeto.Entities\bin\Debug\Projeto.Entities.dll
+E:\TESTANDO\Sistema-de-Controle-de-Veiculos\Projeto.Entities\bin\Debug\Projeto.Entities.pdb
+E:\TESTANDO\Sistema-de-Controle-de-Veiculos\Projeto.Entities\obj\Debug\Projeto.Entities.csprojAssemblyReference.cache
+E:\TESTANDO\Sistema-de-Controle-de-Veiculos\Projeto.Entities\obj\Debug\Projeto.Entities.csproj.CoreCompileInputs.cache
+E:\TESTANDO\Sistema-de-Controle-de-Veiculos\Projeto.Entities\obj\Debug\Projeto.Entities.dll
+E:\TESTANDO\Sistema-de-Controle-de-Veiculos\Projeto.Entities\obj\Debug\Projeto.Entities.pdb

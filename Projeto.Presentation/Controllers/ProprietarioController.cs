@@ -59,13 +59,14 @@ namespace Projeto.Presentation.Controllers
                     //entidade
                     Proprietario p = new Proprietario();
                     p.Nome = model.Nome;
+                    p.Cnpj = model.Cnpj;
 
 
                     //gravar no banco..
                     ProprietarioRepository rep = new ProprietarioRepository();
                     rep.Insert(p);
 
-                    return Json($"Proprietario {p.Nome}, cadastrado com sucesso.");
+                    return Json($"Empresa {p.Nome}, cadastrado com sucesso.");
 
                 }
                 catch (Exception e)
@@ -114,6 +115,8 @@ namespace Projeto.Presentation.Controllers
                     ProprietarioConsultaViewModel model = new ProprietarioConsultaViewModel();
                     model.IdProprietario= p.IdProprietario;
                     model.Nome = p.Nome;
+                    model.Cnpj = p.Cnpj;
+
 
                     lista.Add(model); //adicionando na lista..
                 }
@@ -142,6 +145,7 @@ namespace Projeto.Presentation.Controllers
                 ProprietarioConsultaViewModel model = new ProprietarioConsultaViewModel();
                 model.IdProprietario = p.IdProprietario;
                 model.Nome = p.Nome;
+                model.Cnpj = p.Cnpj;
 
                 //enviando para a página..
                 return Json(model, JsonRequestBehavior.AllowGet);
@@ -160,11 +164,12 @@ namespace Projeto.Presentation.Controllers
             {
                 //buscar o Proprietario na base de dados pelo id..
                 ProprietarioRepository rep = new ProprietarioRepository();
-                int qtdVeiculos = rep.QtdVeiculos(idProprietario);
+                int qtdAutomoveis = rep.QtdAutomoveis(idProprietario);
+                int qtdCaminhoes = rep.QtdCaminhoes(idProprietario);
 
-                if (qtdVeiculos > 0)
+                if (qtdAutomoveis > 0 & qtdCaminhoes > 0)
                 {
-                    return Json($"O Proprietário não pode ser excluído, pois possui {qtdVeiculos} veículos cadastrados.",
+                    return Json($"A Empresa não pode ser excluído, pois possui {qtdAutomoveis & qtdCaminhoes} Veículos cadastrados.",
                         JsonRequestBehavior.AllowGet);
                 }
                 else
@@ -175,10 +180,12 @@ namespace Projeto.Presentation.Controllers
                     rep.Delete(p);
 
                     //retornando mensagem de sucesso..
-                    return Json($"Proprietario {p.Nome}, excluído com sucesso.",
+                    return Json($"Empresa {p.Nome}, excluído com sucesso.",
                     JsonRequestBehavior.AllowGet);
                 }
-                
+
+               
+
             }
             catch (Exception e)
             {
@@ -196,11 +203,12 @@ namespace Projeto.Presentation.Controllers
                 Proprietario p = new Proprietario();
                 p.IdProprietario = model.IdProprietario;
                 p.Nome = model.Nome;
+                p.Cnpj = model.Cnpj;
 
                 ProprietarioRepository rep = new ProprietarioRepository();
                 rep.Update(p); //atualizando..
 
-                return Json($"Proprietario {p.Nome}, atualizado com sucesso.");
+                return Json($"Empresa {p.Nome}, atualizado com sucesso.");
             }
             catch (Exception e)
             {
@@ -217,7 +225,7 @@ namespace Projeto.Presentation.Controllers
             //criando o conteudo do relatorio..
             StringBuilder conteudo = new StringBuilder();
 
-            conteudo.Append("<h1 class='titulo'>Relatório de Proprietários</h1>");
+            conteudo.Append("<h1 class='titulo'>Relatório da empresa</h1>");
             conteudo.Append($"<p>Relatório gerado em: {DateTime.Now} </p>");
             conteudo.Append("<br/>");
 
@@ -225,6 +233,7 @@ namespace Projeto.Presentation.Controllers
             conteudo.Append("<tr>");
             conteudo.Append("<th>Código do Proprietário</th>");
             conteudo.Append("<th>Nome do Proprietário</th>");
+            conteudo.Append("<th>Cnpj do Proprietário</th>");
             conteudo.Append("</tr>");
 
             ProprietarioRepository rep = new ProprietarioRepository();
@@ -234,6 +243,7 @@ namespace Projeto.Presentation.Controllers
                 conteudo.Append("<tr>");
                 conteudo.Append($"<td>{p.IdProprietario}</td>");
                 conteudo.Append($"<td>{p.Nome}</td>");
+                conteudo.Append($"<td>{p.Cnpj}</td>");
                 conteudo.Append("</tr>");
             }
 

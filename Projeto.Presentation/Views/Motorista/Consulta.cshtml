@@ -80,7 +80,7 @@
 
     <div class="row">
         <div class="col-md-6">
-            <h4><marquee>Consulta de Motoristas</marquee></h4>
+            <h4>Consulta de Motoristas</h4>
         </div>
         <div class="col-md-6 text-right">
             <a href="/Motorista/Relatorio" class="btn btn-dark">
@@ -116,6 +116,8 @@
                             <option value="">Escolha uma Opção</option>
                             <option value="IdMotorista">Código</option>
                             <option value="Nome">Nome do Motorista</option>
+                            <option value="Nome">CPF</option>
+                            <option value="Nome">Telefone</option>
                         </select>
                     </div>
                 </div>
@@ -128,6 +130,8 @@
                         <tr>
                             <th>Código</th>
                             <th>Nome do Motorista</th>
+                            <th>CPF</th>
+                            <th>Telefone</th>
                             <th>Operações</th>
                         </tr>
                     </thead>
@@ -136,6 +140,8 @@
                         <tr ng-repeat="m in motoristas | filter : Pesquisa | orderBy : Ordenacao">
                             <td>{{m.IdMotorista}}</td>
                             <td>{{m.Nome}}</td>
+                            <td>{{m.Cpf}}</td>
+                            <td>{{m.Telefone}}</td>
                             <td>
                                 <button class="btn btn-primary btn-sm"
                                         data-target="#janelaedicao"
@@ -156,7 +162,7 @@
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td colspan="3">
+                            <td colspan="5">
                                 Quantidade de registros:
                                 {{(motoristas | filter : Pesquisa).length}}
                             </td>
@@ -182,6 +188,16 @@
                                 <label>Nome do Motorista:</label>
                                 <input type="text" class="form-control"
                                        ng-model="motorista.Nome" />
+                                <br />
+
+                                <label>CPF:</label>
+                                <input type="text" class="form-control"
+                                       ng-model="motorista.Cpf" />
+                                <br />
+
+                                <label>Telefone:</label>
+                                <input type="text" class="form-control"
+                                       ng-model="motorista.Telefone" />
                                 <br />
 
                             </div>
@@ -214,6 +230,12 @@
                                 <br />
 
                                 Nome do Motorista: <strong>{{motorista.Nome}}</strong>
+                                <br />
+
+                                CPF: <strong>{{motorista.Cpf}}</strong>
+                                <br />
+
+                                Telefone: <strong>{{motorista.Telefone}}</strong>
                                 <br />
 
                             </div>

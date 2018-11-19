@@ -29,6 +29,11 @@ namespace Projeto.Repository.Mappings
                .HasMaxLength(50)
                .IsRequired();
 
+            Property(p => p.Cnpj)
+               .HasColumnName("Cnpj")
+               .HasMaxLength(50)
+               .IsRequired();
+
 
         }
     }

@@ -11,14 +11,34 @@ namespace Projeto.Repository.Persistence
 {
    public class ProprietarioRepository : GenericRepository<Proprietario>
     {
-        public int QtdVeiculos(int idProprietario)
+        public int QtdAutomoveis(int idProprietario)
         {
             using (DataContext ctx = new DataContext())
             {
-                return ctx.Veiculo
-                    .Where(v => v.IdProprietario == idProprietario)
+                return ctx.Automovel
+                    .Where(a => a.IdProprietario == idProprietario)
                     .Count();
             }
+        }
+
+        public int QtdCaminhoes(int idProprietario)
+        {
+            using (DataContext ctx = new DataContext())
+            {
+                return ctx.Caminhao
+                    .Where(c => c.IdProprietario == idProprietario)
+                    .Count();
+            }
+        }
+
+        public int QtdVeiculos(int idMotorista)
+        {
+            throw new NotImplementedException();
+        }
+
+        public int QtdCaminhoes(object idCaminhao)
+        {
+            throw new NotImplementedException();
         }
     }
 }

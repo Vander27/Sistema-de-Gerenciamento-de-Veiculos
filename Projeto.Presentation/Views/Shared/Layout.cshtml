@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,8 +16,12 @@
     <link href="/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
     <!-- Custom styles for this template-->
     <link href="/css/sb-admin.css" rel="stylesheet">
+
+    
 </head>
+
 <body id="page-top">
+
     <nav class="navbar navbar-expand navbar-dark btn-dark static-top">
         <a class="navbar-brand mr-1" href="/Home/Index"><font color=#FFFF00><b><blink>VJC Technology&emsp;&emsp;</blink></b></font></a>
         <button class="btn btn-link btn-sm text-danger order-1 order-sm-0" id="sidebarToggle" href="#">
@@ -25,26 +30,6 @@
 
         </button>
 
-        <li class="navbar-nav">
-            <font color=#FFFF00>
-
-                <b>
-
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    &emsp;&emsp;&emsp;&emsp;
-                    <marquee><b><blink>Sistema de Gerenciamento de Veículos</blink></b></marquee>
-                </b>
-            </font>
-
-
-        </li>
 
         &emsp;&emsp;
         <a href="/Proprietario/Sobre">
@@ -67,143 +52,165 @@
         </a>
         &emsp;&emsp;
 
+        <div style="position:absolute;top:unset;right:0">
+
+            <a id="criar" href="/Usuario/Autenticar" style=" padding: 7px;font-feature-settings: normal"><font color=#FFFF00>Acesso</font></a>
+
+            &emsp;
+            
+        </div>
+            
     </nav>
 
-    <div id="wrapper">
-        <!-- Sidebar -->
-
-        <ul class="sidebar  navbar-nav">
 
 
-            <li class="nav-item">
-                <a class="nav-link" href="/Home/Index">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>
-                        <font color=#00BFFF><b><blink>Página inicial</b></blink></font>
-                    </span>
-                </a>
+  <div id="wrapper">
+    <!-- Sidebar -->
 
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>
-                        <font color=#00BFFF><b><blink>Motorista</b></blink></font>
-                    </span>
+    <ul class="sidebar  navbar-nav">
+
+
+        <li class="nav-item">
+            <a class="nav-link" href="/Home/Index">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>
+                    <font color=#00BFFF><b><blink>Página inicial</b></blink></font>
+                </span>
+            </a>
+
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-fw fa-folder"></i>
+                <span>
+                    <font color=#00BFFF><b><blink>Motorista</b></blink></font>
+                </span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                <a class="dropdown-item" href="/Motorista/Cadastro">
+                    Cadastrar Motorista
                 </a>
-                <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-                    <a class="dropdown-item" href="/Motorista/Cadastro">
-                        Cadastrar Motorista
-                    </a>
-                    <a class="dropdown-item" href="/Motorista/Consulta">
-                        Consultar Motorista
-                    </a>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>
-                        <font color=#00BFFF><b><blink>Empresa</b></blink></font>
-                    </span>
+                <a class="dropdown-item" href="/Motorista/Consulta">
+                    Consultar Motorista
                 </a>
-                <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-                    <a class="dropdown-item" href="/Proprietario/Cadastro">
-                        Cadastrar Empresa
-                    </a>
-                    <a class="dropdown-item" href="/Proprietario/Consulta">
-                        Consultar Empresa
-                    </a>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>
-                        <font color=#00BFFF><b><blink>Veículo</b></blink></font>
-                    </span>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-                    <a class="dropdown-item" href="/Veiculo/Cadastro">
-                        Cadastrar Veículo
-                    </a>
-                    <a class="dropdown-item" href="/Veiculo/Consulta">
-                        Consultar Veículo
-                    </a>
-                </div>
-            </li>
-        </ul>
-        <div id="content-wrapper">
-            <div class="container-fluid">
-                <!-- Breadcrumbs-->
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                        <a href="/Home/Index">Página inicial</a>
-                    </li>
-                    <li class="breadcrumb-item active">@ViewBag.Pagina</li>
-                </ol>
-                <!-- Page Content -->
-                @RenderBody()
             </div>
-            <!-- /.container-fluid -->
-            <!-- Sticky Footer -->
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-fw fa-folder"></i>
+                <span>
+                    <font color=#00BFFF><b><blink>Empresa</b></blink></font>
+                </span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                <a class="dropdown-item" href="/Proprietario/Cadastro">
+                    Cadastrar Empresa
+                </a>
+                <a class="dropdown-item" href="/Proprietario/Consulta">
+                    Consultar Empresa
+                </a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-fw fa-folder"></i>
+                <span>
+                    <font color=#00BFFF><b><blink>Veículo</b></blink></font>
+                </span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                <a class="dropdown-item" href="/Automovel/Cadastro">
+                    Cadastrar Automóvel
+                </a>
+                <a class="dropdown-item" href="/Automovel/Consulta">
+                    Consultar Automóvel
+                </a>
 
-           
+                <a class="dropdown-item" href="/Caminhao/Cadastro">
+                    Cadastrar Caminhão
+                </a>
+                <a class="dropdown-item" href="/Caminhao/Consulta">
+                    Consultar Caminhão
+                </a>
+            </div>
+        </li>
 
-            <footer class="sticky-footer">
+    </ul>
 
-                <div class="container my-sm-auto">
+    <footer class="sticky-footer">
 
-                    <div class="copyright text-center my-auto">
-                        <span><font color=#000000><b><blink>Copyright © Your Website 2018</b></blink></font></span>
-                    </div>
-                </div>
-            </footer>
+        <div class="container my-sm-auto">
 
 
+            <div class="copyright text-center my-auto">
+                <span><font color=#000000><img src="~/Foto/Logo.png" width=40 height=40> Copyright © 2018 - Todos os direitos reservados</font></span>
+
+            </div>
 
         </div>
 
+    </footer>
 
-        <!-- /.content-wrapper -->
+
+    <div id="content-wrapper">
+        <div class="container-fluid">
+
+
+        </div>
+        @RenderBody()
+        <!-- /.container-fluid -->
+        <!-- Sticky Footer -->
+
 
     </div>
-    <!-- /#wrapper -->
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="/Home/Index">Logout</a>
-                </div>
+
+
+
+    <!-- /.content-wrapper -->
+
+</div>
+<br />
+<br />
+<!-- /#wrapper -->
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+</a>
+<!-- Logout Modal-->
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-primary" href="#">Logout</a>
             </div>
         </div>
     </div>
-    <!-- Bootstrap core JavaScript-->
-    <script src="/vendor/jquery/jquery.min.js"></script>
-    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- Core plugin JavaScript-->
-    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
-    <!-- Custom scripts for all pages-->
-    <script src="/js/sb-admin.min.js"></script>
+</div>
 
 
-    <script src="~/Scripts/angular.min.js"></script>
 
-    <!--seção para conteudo javascript-->
-    @RenderSection("Scripts", required: false)
+
+<!-- Bootstrap core JavaScript-->
+<script src="/vendor/jquery/jquery.min.js"></script>
+<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Core plugin JavaScript-->
+<script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+<!-- Custom scripts for all pages-->
+<script src="/js/sb-admin.min.js"></script>
+
+
+<script src="~/Scripts/angular.min.js"></script>
+
+<!--seção para conteudo javascript-->
+@RenderSection("Scripts", required: false)
 
 </body>
 </html>

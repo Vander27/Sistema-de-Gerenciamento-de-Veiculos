@@ -18,6 +18,7 @@
 
                 $scope.model = {//Json
                     Nome: '' //vazio..
+                     
                 };
 
                 //criando uma função que será executada
@@ -36,12 +37,20 @@
                             //limpar o conteudo do campo..
                             $scope.model.Nome = "";
                             $scope.ErroNome = "";
+                            $scope.model.Cpf = "";
+                            $scope.ErroCpf = "";
+                            $scope.model.Telefone = "";
+                            $scope.ErroTelefone = "";
                         })
                         .catch(function (e) {
 
                             if (e.status == 400) { //BadRequest
                                 //armazenar o erro do campo nome..
                                 $scope.ErroNome = e.data.Nome;
+                                $scope.mensagem = "";
+                                $scope.ErroCpf = e.data.Cpf;
+                                $scope.mensagem = "";
+                                $scope.ErroTelefone = e.data.Telefone;
                                 $scope.mensagem = "";
                             }
                             else {
@@ -63,26 +72,44 @@
 <br />
 
 <div class="row" ng-app="appMotorista" ng-controller="cadastroMotorista">
-        <div class="col-md-4">
+    <div class="col-md-4">
 
-            <label>Nome do Motorista:</label>
-            <input type="text" class="form-control"
-                   placeholder="Digite aqui"
-                   ng-model="model.Nome" />
-            <div>
-                <strong class="text-danger">{{ErroNome}}</strong>
-            </div>
-            <br />
-
-            <button class="btn btn-success"
-                    ng-click="cadastrar()">
-                Cadastrar Motorista
-            </button>
-            <br />
-            <br />
-
-            <strong>{{mensagem}}</strong>
-
+        <label>Nome do Motorista:</label>
+        <input type="text" class="form-control"
+               placeholder="Digite aqui"
+               ng-model="model.Nome" />
+        <div>
+            <strong class="text-danger">{{ErroNome}}</strong>
         </div>
+        <br />
+
+        <label>CPF:</label>
+        <input type="text" class="form-control"
+               placeholder="Digite aqui"
+               ng-model="model.Cpf" />
+        <div>
+            <strong class="text-danger">{{ErroCpf}}</strong>
+        </div>
+        <br />
+
+        <label>Telefone:</label>
+        <input type="text" class="form-control"
+               placeholder="Digite aqui"
+               ng-model="model.Telefone" />
+        <div>
+            <strong class="text-danger">{{ErroTelefone}}</strong>
+        </div>
+        <br />
+
+        <button class="btn btn-success"
+                ng-click="cadastrar()">
+            Cadastrar Motorista
+        </button>
+        <br />
+        <br />
+
+        <strong>{{mensagem}}</strong>
+
+    </div>
     
 </div>

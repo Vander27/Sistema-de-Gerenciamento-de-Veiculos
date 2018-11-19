@@ -50,13 +50,17 @@
   <ItemGroup>
     <Compile Include="Context\DataContext.cs" />
     <Compile Include="Generics\GenericRepository.cs" />
+    <Compile Include="Mappings\CaminhaoMap.cs" />
     <Compile Include="Mappings\MotoristaMap.cs" />
     <Compile Include="Mappings\ProprietarioMap.cs" />
-    <Compile Include="Mappings\VeiculoMap.cs" />
+    <Compile Include="Mappings\AutomovelMap.cs" />
+    <Compile Include="Mappings\UsuarioMap.cs" />
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Persistence\CaminhaoRepository.cs" />
     <Compile Include="Persistence\MotoristaRepository.cs" />
     <Compile Include="Persistence\ProprietarioRepository.cs" />
-    <Compile Include="Persistence\VeiculoRepository.cs" />
+    <Compile Include="Persistence\AutomovelRepository.cs" />
+    <Compile Include="Persistence\UsuarioRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

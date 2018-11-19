@@ -1,0 +1,6 @@
+E:\TESTANDO\Sistema-de-Controle-de-Veiculos\Projeto.Util\bin\Debug\Projeto.Util.dll
+E:\TESTANDO\Sistema-de-Controle-de-Veiculos\Projeto.Util\bin\Debug\Projeto.Util.pdb
+E:\TESTANDO\Sistema-de-Controle-de-Veiculos\Projeto.Util\obj\Debug\Projeto.Util.csprojAssemblyReference.cache
+E:\TESTANDO\Sistema-de-Controle-de-Veiculos\Projeto.Util\obj\Debug\Projeto.Util.csproj.CoreCompileInputs.cache
+E:\TESTANDO\Sistema-de-Controle-de-Veiculos\Projeto.Util\obj\Debug\Projeto.Util.dll
+E:\TESTANDO\Sistema-de-Controle-de-Veiculos\Projeto.Util\obj\Debug\Projeto.Util.pdb

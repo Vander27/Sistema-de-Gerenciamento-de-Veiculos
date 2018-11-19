@@ -28,6 +28,16 @@ namespace Projeto.Repository.Mappings
                .HasMaxLength(50)
                .IsRequired();
 
+            Property(m => m.Cpf)
+               .HasColumnName("Cpf")
+               .HasMaxLength(50)
+               .IsRequired();
+
+            Property(m => m.Telefone)
+               .HasColumnName("Telefone")
+               .HasMaxLength(50)
+               .IsRequired();
+
 
         }
     }

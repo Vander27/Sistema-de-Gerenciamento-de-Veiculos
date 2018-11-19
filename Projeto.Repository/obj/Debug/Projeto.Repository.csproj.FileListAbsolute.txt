@@ -54,3 +54,17 @@ E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Repository\obj\Debug
 E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Repository\obj\Debug\Projeto.Repository.csproj.CopyComplete
 E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Repository\obj\Debug\Projeto.Repository.dll
 E:\PROJETO GIT\SITE\Sistema-de-Controle-de-Veiculos\Projeto.Repository\obj\Debug\Projeto.Repository.pdb
+E:\TESTANDO\Sistema-de-Controle-de-Veiculos\Projeto.Repository\bin\Debug\Projeto.Repository.dll.config
+E:\TESTANDO\Sistema-de-Controle-de-Veiculos\Projeto.Repository\bin\Debug\Projeto.Repository.dll
+E:\TESTANDO\Sistema-de-Controle-de-Veiculos\Projeto.Repository\bin\Debug\Projeto.Repository.pdb
+E:\TESTANDO\Sistema-de-Controle-de-Veiculos\Projeto.Repository\bin\Debug\EntityFramework.dll
+E:\TESTANDO\Sistema-de-Controle-de-Veiculos\Projeto.Repository\bin\Debug\EntityFramework.SqlServer.dll
+E:\TESTANDO\Sistema-de-Controle-de-Veiculos\Projeto.Repository\bin\Debug\Projeto.Entities.dll
+E:\TESTANDO\Sistema-de-Controle-de-Veiculos\Projeto.Repository\bin\Debug\Projeto.Entities.pdb
+E:\TESTANDO\Sistema-de-Controle-de-Veiculos\Projeto.Repository\bin\Debug\EntityFramework.xml
+E:\TESTANDO\Sistema-de-Controle-de-Veiculos\Projeto.Repository\bin\Debug\EntityFramework.SqlServer.xml
+E:\TESTANDO\Sistema-de-Controle-de-Veiculos\Projeto.Repository\obj\Debug\Projeto.Repository.csprojAssemblyReference.cache
+E:\TESTANDO\Sistema-de-Controle-de-Veiculos\Projeto.Repository\obj\Debug\Projeto.Repository.csproj.CoreCompileInputs.cache
+E:\TESTANDO\Sistema-de-Controle-de-Veiculos\Projeto.Repository\obj\Debug\Projeto.Repository.csproj.CopyComplete
+E:\TESTANDO\Sistema-de-Controle-de-Veiculos\Projeto.Repository\obj\Debug\Projeto.Repository.dll
+E:\TESTANDO\Sistema-de-Controle-de-Veiculos\Projeto.Repository\obj\Debug\Projeto.Repository.pdb

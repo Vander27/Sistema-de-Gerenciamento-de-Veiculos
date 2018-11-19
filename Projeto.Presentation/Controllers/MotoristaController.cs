@@ -15,7 +15,8 @@ namespace Projeto.Presentation.Controllers
 {
     public class MotoristaController : Controller
     {
-        // GET: Motorista/Cadastro
+        private int idCaminhao;
+
         public ActionResult Cadastro()
         {
             return View();
@@ -38,6 +39,8 @@ namespace Projeto.Presentation.Controllers
                     // entidade..
                     Motorista m = new Motorista();
                     m.Nome = model.Nome;
+                    m.Cpf = model.Cpf;
+                    m.Telefone = model.Telefone;
 
                     //gravar no banco..
                     MotoristaRepository rep = new MotoristaRepository();
@@ -91,6 +94,8 @@ namespace Projeto.Presentation.Controllers
                     MotoristaConsultaViewModel model = new MotoristaConsultaViewModel();
                     model.IdMotorista = m.IdMotorista;
                     model.Nome = m.Nome;
+                    model.Cpf = m.Cpf;
+                    model.Telefone = m.Telefone;
 
                     lista.Add(model); //adicionando na lista..
                 }
@@ -118,6 +123,8 @@ namespace Projeto.Presentation.Controllers
                 MotoristaConsultaViewModel model = new MotoristaConsultaViewModel();
                 model.IdMotorista = m.IdMotorista;
                 model.Nome = m.Nome;
+                model.Cpf = m.Cpf;
+                model.Telefone = m.Telefone;
 
                 //enviando para a página..
                 return Json(model, JsonRequestBehavior.AllowGet);
@@ -136,13 +143,17 @@ namespace Projeto.Presentation.Controllers
             {
                 //buscar o motorista na base de dados pelo id..
                 MotoristaRepository rep = new MotoristaRepository();
-                int qtdVeiculos = rep.QtdVeiculos(idMotorista);
+                int qtdAutomoveis = rep.QtdAutomoveis(idMotorista);
+                int qtdCaminhoes = rep.QtdCaminhoes(idCaminhao);
 
-                if (qtdVeiculos > 0)
+
+                if (qtdAutomoveis > 0 || qtdCaminhoes > 0)
                 {
-                    return Json($"O Motorista não pode ser excluido, pois possui {qtdVeiculos} veículos cadastrados.",
+                    return Json($"O Motorista não pode ser excluido, pois possui {qtdAutomoveis * qtdCaminhoes } Veículo cadastrado.",
                         JsonRequestBehavior.AllowGet);
                 }
+                
+
                 else
                 {
                     Motorista m = rep.FindById(idMotorista);
@@ -174,6 +185,8 @@ namespace Projeto.Presentation.Controllers
                 Motorista m = new Motorista();
                 m.IdMotorista = model.IdMotorista;
                 m.Nome = model.Nome;
+                m.Cpf = model.Cpf;
+                m.Telefone = model.Telefone;
 
                 MotoristaRepository rep = new MotoristaRepository();
                 rep.Update(m); //atualizando..
@@ -202,6 +215,8 @@ namespace Projeto.Presentation.Controllers
             conteudo.Append("<tr>");
             conteudo.Append("<th>Código do Motorista</th>");
             conteudo.Append("<th>Nome do Motorista</th>");
+            conteudo.Append("<th>Cpf do Motorista</th>");
+            conteudo.Append("<th>Telefone do Motorista</th>");
             conteudo.Append("</tr>");
 
             MotoristaRepository rep = new MotoristaRepository();
@@ -211,6 +226,8 @@ namespace Projeto.Presentation.Controllers
                 conteudo.Append("<tr>");
                 conteudo.Append($"<td>{m.IdMotorista}</td>");
                 conteudo.Append($"<td>{m.Nome}</td>");
+                conteudo.Append($"<td>{m.Cpf}</td>");
+                conteudo.Append($"<td>{m.Telefone}</td>");
                 conteudo.Append("</tr>");
             }
 

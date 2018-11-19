@@ -10,5 +10,6 @@ namespace Projeto.Presentation.Models
     {
         public int IdProprietario { get; set; }
         public string Nome { get; set; }
+        public string Cnpj { get; set; }
     }
 }

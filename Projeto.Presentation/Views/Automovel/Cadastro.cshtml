@@ -1,0 +1,235 @@
+﻿
+@{
+    ViewBag.Title = "Cadastro Automovel";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+
+@section scripts{
+    <script>
+        //criando o programa angular..
+        var appAutomovel = angular.module('appAutomovel', []);
+        //criando o controller..
+        appAutomovel.controller('cadastroAutomovel',
+            function ($scope, $http) {
+
+                //JSON para resgatar os dados dos campos
+                //e enviar para a ViewModel..
+                $scope.model = {
+                    Marca: '',
+                    Modelo: '',
+                    
+                    
+                    Placa: '',
+                    Cor: '',
+                    KmInicial: '',
+                    
+                    Foto: '',
+                    IdMotorista: '',
+                    IdProprietario: ''
+                };
+
+                //função para realizar o cadastro do Caminhao..
+                $scope.cadastrarAutomovel = function () {
+
+                    $scope.mensagem = "Processando, por favor aguarde.";
+
+                    //requisição ao controller..
+                    $http.post('/Automovel/CadastrarAutomovel', $scope.model)
+                        .then(function (d) {
+
+                            $scope.mensagem = d.data; //mensagem de sucesso..
+
+                            $scope.ErroMarca = '';
+                            $scope.ErroModelo = '';
+                            
+                            $scope.ErroAno = '';
+                            $scope.ErroPlaca = '';
+                            
+                            $scope.ErroKmInicial = '';
+                            
+                            $scope.ErroFoto = '';
+                            $scope.ErroMotorista = '';
+                            $scope.ErroProprietario = '';
+
+                            $scope.model.Marca = '';
+                            $scope.model.Modelo = '';
+                            
+                           
+                            $scope.model.Placa = '';
+                            
+                            $scope.model.KmInicial = '';
+                           
+                            $scope.model.Foto = '';
+                            $scope.model.IdMotorista = '';
+                            $scope.model.IdProprietario = '';
+
+                        })
+                        .catch(function (e) {
+                            if (e.status == 400) { //validação..
+
+                                $scope.mensagem = "";
+
+                                $scope.ErroMarca = e.data.Marca;
+                                $scope.ErroModelo = e.data.Modelo;
+                               
+                               
+                                $scope.ErroPlaca = e.data.Placa;
+                                
+                                $scope.ErroKmInicial = e.data.KmInicial;
+                                
+                                $scope.ErroFoto = e.data.Foto;
+                                $scope.ErroMotorista = e.data.IdMotorista;
+                                $scope.ErroProprietario = e.data.IdProprietario;
+                            }
+                            else {
+                                $scope.mensagem = e.data;
+                            }
+                        });
+                };
+
+
+
+                //criando uma função para obter os Mororistas..
+                $scope.consultarMotoristas = function () {
+                    $http.get('/Motorista/ConsultarMotoristas')
+                        .then(function (d) { //sucesso
+                            $scope.motoristas = d.data;
+                        })
+                        .catch(function (e) { //erro
+                            $scope.mensagem = e.data; //mensagem de erro..
+                        })
+                };
+
+                //criando uma função para obter as Proprietarios..
+                $scope.consultarProprietarios = function () {
+                    $http.get('/Proprietario/ConsultarProprietarios')
+                        .then(function (d) { //sucesso
+                            $scope.proprietarios = d.data;
+
+                        })
+                        .catch(function (e) { //errro..
+                            $scope.mensagem = e.data;
+                        })
+                };
+
+            });
+    </script>
+}
+
+
+
+<div ng-app="appAutomovel" ng-controller="cadastroAutomovel">
+
+    <h4>Formulário de Cadastro de Automóvel</h4>
+    <br />
+    <div >
+        <div class="row">
+            <div class="col-md-4">
+
+
+                <label>Marca:</label>
+                <input type="text" class="form-control"
+                       placeholder="Digite aqui"
+                       ng-model="model.Marca" />
+                <span class="text-danger">
+                    {{ErroMarca}}
+                </span>
+                <br />
+
+                <label>Modelo:</label>
+                <input type="text" class="form-control"
+                       placeholder="Digite aqui"
+                       ng-model="model.Modelo" />
+                <span class="text-danger">
+                    {{ErroModelo}}
+                </span>
+                <br />
+
+          
+
+                <label>Placa:</label>
+                <input type="text" class="form-control"
+                       placeholder="Digite aqui"
+                       ng-model="model.Placa" />
+                <span class="text-danger">
+                    {{ErroPlaca}}
+                </span>
+                <br />
+
+
+                <label>Km :</label>
+                <input type="text" class="form-control"
+                       placeholder="Digite aqui"
+                       ng-model="model.KmInicial" />
+                <span class="text-danger">
+                    {{ErroKmInicial}}
+                </span>
+
+                <br />
+
+                
+
+            </div>
+
+            <div class="col-md-4">
+
+                <label>Selecione o Motorista:</label>
+                <select class="form-control" ng-model="model.IdMotorista"
+                        ng-init="consultarMotoristas()">
+                    <option value="">Escolha uma Opção</option>
+                    <option value="{{m.IdMotorista}}" ng-repeat="m in motoristas">
+                        {{m.Nome}}
+                    </option>
+                </select>
+                <span class="text-danger">
+                    {{ErroMotorista}}
+                </span>
+
+                <br />
+
+                <label>Selecione a Empresa:</label>
+                <select class="form-control" ng-model="model.IdProprietario"
+                        ng-init="consultarProprietarios()">
+                    <option value="">Escolha uma Opção</option>
+                    <option value="{{p.IdProprietario}}" ng-repeat="p in proprietarios">
+                        {{p.Nome}}
+                    </option>
+                </select>
+                <span class="text-danger">
+                    {{ErroProprietario}}
+                </span>
+                <br />
+
+                <label>URL da Imagem do Automóvel:</label>
+                <input type="text" class="form-control"
+                       placeholder="Cole aqui"
+                       ng-model="model.Foto" />
+                <span class="text-danger">
+                    {{ErroFoto}}
+                </span>
+                <br />
+
+            </div>
+        </div>
+
+    </div>
+
+    <br />
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+            <button class="btn btn-success" ng-click="cadastrarAutomovel()">
+                Cadastrar Automóvel
+            </button>
+            <br />
+            <br />
+            <strong>{{mensagem}}</strong>
+        </div>
+    </div>
+</div>
+
+
+

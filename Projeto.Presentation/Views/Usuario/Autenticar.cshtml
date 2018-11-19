@@ -1,0 +1,127 @@
+﻿
+@{
+    ViewBag.Title = "Autenticar";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+
+@section Scripts{
+    <script>
+
+        //criando e dando um nome a um programa angular
+        var appUsuario = angular.module('appUsuario', []);
+        //criando um controller para realizar o cadastro do ..
+        appUsuario.controller('autenticarUsuario',
+            function ($scope, $http) {
+
+                //declarar uma variável para resgatar o valor
+                //digitado no campo 'nome do '
+
+                $scope.model = {//Json
+                    Nome: '' //vazio..
+
+                };
+
+                //criando uma função que será executada
+                //quando o botão de cadastro for clicado..
+                $scope.autenticar = function () {
+
+                    //imprimir mensagem..
+                    $scope.mensagem = "Processando, aguarde...";
+
+                    //requisição AJAX ao controller..
+                    $http.post('Usuario/AutenticarUsuario', $scope.model)
+                        .then(function (obj) {
+
+                            //imprimir mensagem de sucesso..
+                            $scope.mensagem = obj.data;
+                            //limpar o conteudo do campo..
+                           
+                            $scope.model.Email = "";
+                            $scope.ErroEmail = "";
+                            $scope.model.Senha = "";
+                            $scope.ErroSenha = "";
+                        })
+                        .catch(function (e) {
+
+                            if (e.status == 400) { //BadRequest
+                                //armazenar o erro do campo nome..
+                           
+                                $scope.ErroEmail = e.data.Email;
+                                $scope.mensagem = "";
+                                $scope.ErroSenha = e.data.Senha;
+                                $scope.mensagem = "";
+                            }
+                            else {
+                                //imprimir mensagem de erro..
+                                $scope.mensagem = "Erro: " + e.data;
+                            }
+
+                        });
+                };
+
+            });
+
+    </script>
+
+}
+
+
+
+
+<link href="~/css/central.css" rel="stylesheet" />
+<link href="~/Content/centralcontente.css" rel="stylesheet" />
+
+
+<div ng-app="appUsuario" ng-controller="autenticarUsuario">
+    <div class="container">
+        <a class="/Usuario/CriarConta" id="paracadastro"></a>
+
+        <div class="content">
+
+
+            <!--FORMULÁRIO DE LOGIN-->
+            <div id="login">
+                <form method="post" action="">
+                    <h1>Login</h1>
+                    <p>
+                        <label for="Email">Seu email</label>
+                        <input id="Email" name="Email" required="required" type="text" placeholder="ex. contato@htmlecsspro.com"
+                         ng-model="model.Email" />
+                        <div>
+                            <strong class="text-danger">{{ErroEmail}}</strong>
+                        </div>
+                    </p>
+
+                    <p>
+                        <label for="Senha">Seu e-mail</label>
+                        <input id="Senha" name="Senha" required="required" type="password" placeholder="ex. senha"
+                               ng-model="model.Senha" />
+                        <div>
+                            <strong class="text-danger">{{ErroSenha}}</strong>
+                        </div>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" name="manterlogado" id="manterlogado" value="" />
+                        <label for="manterlogado">Manter-me logado</label>
+                    </p>
+
+                    <p>
+                        <input type="submit" ng-click="consultar()" value="Logar" />
+                    </p>
+
+                    <strong>{{mensagem}}</strong>
+
+                    <p class="/Usuario/CriarConta">
+                        Ainda não tem conta?
+                        <a href="/Usuario/CriarConta">Cadastre-se</a>
+                    </p>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>

@@ -23,12 +23,17 @@ namespace Projeto.Repository.Context
         {
             modelBuilder.Configurations.Add(new MotoristaMap());
             modelBuilder.Configurations.Add(new ProprietarioMap());
-            modelBuilder.Configurations.Add(new VeiculoMap());
+            modelBuilder.Configurations.Add(new AutomovelMap());
+            modelBuilder.Configurations.Add(new CaminhaoMap());
+            modelBuilder.Configurations.Add(new UsuarioMap());
+
 
         }
 
         public DbSet<Motorista> Motorista { get; set; }
-        public DbSet<Veiculo> Veiculo { get; set; }
+        public DbSet<Automovel> Automovel { get; set; }
+        public DbSet<Caminhao> Caminhao { get; set; }
         public DbSet<Proprietario> Proprietario { get; set; }
+        public DbSet<Usuario> Usuario { get; set; }
     }
 }

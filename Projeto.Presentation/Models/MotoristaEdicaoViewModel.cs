@@ -9,5 +9,7 @@ namespace Projeto.Presentation.Models
     {
         public int IdMotorista { get; set; }
         public string Nome { get; set; }
+        public string Cpf { get; set; }
+        public string Telefone { get; set; }
     }
 }

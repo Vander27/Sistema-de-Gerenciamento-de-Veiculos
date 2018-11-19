@@ -105,10 +105,18 @@
     <Content Include="App_Data\Banco_log.ldf">
       <DependentUpon>Banco.mdf</DependentUpon>
     </Content>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\centralcontente.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="css\central.css" />
     <Content Include="css\relatorio.css" />
     <Content Include="css\sb-admin.css" />
     <Content Include="css\sb-admin.min.css" />
     <Content Include="css\Test.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Foto\CARRO.jpg" />
+    <Content Include="Foto\Logo.png" />
     <Content Include="Global.asax" />
     <Content Include="js\demo\chart-area-demo.js" />
     <Content Include="js\demo\chart-bar-demo.js" />
@@ -119,6 +127,13 @@
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Areas\AreaRestrita\Views\web.config" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.css" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css" />
     <Content Include="vendor\bootstrap\css\bootstrap-reboot.css" />
@@ -1527,27 +1542,39 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\AreaRestrita\AreaRestritaAreaRegistration.cs" />
+    <Compile Include="Controllers\CaminhaoController.cs" />
     <Compile Include="Controllers\MotoristaController.cs" />
     <Compile Include="Controllers\ProprietarioController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\VeiculoController.cs" />
+    <Compile Include="Controllers\AutomovelController.cs" />
+    <Compile Include="Controllers\UsuarioController.cs" />
+    <Compile Include="Filters\NoCache.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CaminhaoCadastroViewModel.cs" />
+    <Compile Include="Models\CaminhaoConsultaViewModel.cs" />
+    <Compile Include="Models\CaminhaoEdicaoViewModel.cs" />
     <Compile Include="Models\MotoristaCadastroViewModel.cs" />
     <Compile Include="Models\MotoristaEdicaoViewModel.cs" />
     <Compile Include="Models\ProprietarioCadastroViewModel.cs" />
     <Compile Include="Models\ProprietarioConsultaViewModel.cs" />
     <Compile Include="Models\MotoristaConsultaViewModel.cs" />
     <Compile Include="Models\ProprietarioEdicaoViewModel.cs" />
-    <Compile Include="Models\VeiculoCadastroViewModel.cs" />
-    <Compile Include="Models\VeiculoConsultaViewModel.cs" />
-    <Compile Include="Models\VeiculoEdicaoViewModel.cs" />
+    <Compile Include="Models\AutomovelCadastroViewModel.cs" />
+    <Compile Include="Models\AutomovelConsultaViewModel.cs" />
+    <Compile Include="Models\AutomovelEdicaoViewModel.cs" />
+    <Compile Include="Models\UsuarioAutenticarViewModel.cs" />
+    <Compile Include="Models\UsuarioCriarContaViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils\ReportsUtil.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
@@ -1613,12 +1640,17 @@
     <Content Include="Views\Motorista\Consulta.cshtml" />
     <Content Include="Views\Proprietario\Cadastro.cshtml" />
     <Content Include="Views\Proprietario\Consulta.cshtml" />
-    <Content Include="Views\Veiculo\Cadastro.cshtml" />
-    <Content Include="Views\Veiculo\Consulta.cshtml" />
+    <Content Include="Views\Automovel\Cadastro.cshtml" />
+    <Content Include="Views\Automovel\Consulta.cshtml" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Views\Proprietario\Sobre.cshtml" />
     <Content Include="Views\Proprietario\Servico.cshtml" />
     <Content Include="Views\Proprietario\Contato.cshtml" />
+    <Content Include="Views\Caminhao\Cadastro.cshtml" />
+    <Content Include="Views\Caminhao\Consulta.cshtml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Usuario\CriarConta.cshtml" />
+    <Content Include="Views\Usuario\Autenticar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1635,9 +1667,15 @@
       <Project>{bdf3f8f0-2bfd-435c-bc08-fac5f03ede3e}</Project>
       <Name>Projeto.Repository</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Projeto.Util\Projeto.Util.csproj">
+      <Project>{09b899d4-aa60-4627-bd64-45894163f864}</Project>
+      <Name>Projeto.Util</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Foto\" />
+    <Folder Include="Areas\AreaRestrita\Controllers\" />
+    <Folder Include="Areas\AreaRestrita\Models\" />
+    <Folder Include="Areas\AreaRestrita\Views\Shared\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
