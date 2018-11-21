@@ -90,6 +90,7 @@
 
         <label>CPF:</label>
         <input type="text" maxlength="14" class="form-control"
+               placeholder="Ex: 000.000.000-00"
                onkeydown="javascript:return aplica_mascara_cpfcnpj(this,18,event)"
                onkeyup="javascript:return aplica_mascara_cpfcnpj(this,18,event)"
                ng-model="model.Cpf" />
@@ -102,7 +103,7 @@
 
 
         <label>Telefone:</label><br />
-        <input  class="form-control" onkeypress="return mask(event, this, '(##) ####-####')" maxlength="15" placeholder=" (DDD) 0000-0000"
+        <input  class="form-control" onkeypress="return mask(event, this, '(##) ####-####')" maxlength="15" placeholder="Ex: (DDD) 0000-0000"
                ng-model="model.Telefone" />
 
 

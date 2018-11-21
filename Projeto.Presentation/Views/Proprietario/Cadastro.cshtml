@@ -88,12 +88,13 @@
 
         <label>CNPJ:</label>
         <input type="text" maxlength="17" class="form-control"
+               placeholder="Ex: 00.000.000/0000-00"
                onkeydown="javascript:return aplica_mascara_cpfcnpj(this,18,event)"
                onkeyup="javascript:return aplica_mascara_cpfcnpj(this,18,event)"
                ng-model="model.Cnpj" />
 
 
-
+        
 
         <div>
             <strong class="text-danger">{{ErroCnpj}}</strong>
