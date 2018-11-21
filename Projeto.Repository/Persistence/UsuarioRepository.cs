@@ -11,14 +11,6 @@ namespace Projeto.Repository.Persistence
 {
     public class UsuarioRepository : GenericRepository<Usuario>
     {
-        public bool HasEmail(string email)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Usuario Find(string email, string v)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }

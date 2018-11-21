@@ -1,0 +1,52 @@
+﻿
+
+@{
+    ViewBag.Title = "Contato";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+
+<link href="~/css/centalizar-corpo.css" rel="stylesheet" />
+
+<h2>
+    <center><font color=#ff0000>Contato</font></center>
+
+
+</h2>
+
+
+
+<form name="meuForm" method="post" id="formulario">
+    <div class="box">
+        <h1>Entre em Contato </h1>
+
+        <label>
+            <span>Nome</span>
+            <input type="text" class="input_text" style="color:#000000" name="nome" id="name"
+                   placeholder="Digite aqui" />
+
+        </label>
+
+        <label>
+            <span>Email</span>
+            <input type="text" class="input_text" style="color:#000000" name="email" id="email"
+                   placeholder="Digite aqui" />
+        </label>
+
+        <label>
+            <span>Assunto</span>
+            <input type="text" class="input_text" style="color:#000000" name="assunto" id="subject"
+                   placeholder="Digite aqui" />
+        </label>
+
+
+        <label>
+            <span>Mensagem</span>
+
+            <textarea style="color:#000000" class="message" name="feedback" id="feedback"placeholder="Escreva aqui"></textarea>
+            <input type="reset" class="button" value="Limpar" />
+            <input type="submit" class="button" value="Enviar" />
+
+        </label>
+    </div>
+</form> 

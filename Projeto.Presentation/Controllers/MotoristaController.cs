@@ -10,19 +10,22 @@ using System.Collections;
 using System.Net;
 using System.Text;
 using Projeto.Presentation.Utils;
+using Projeto.Presentation.Filters;
 
 namespace Projeto.Presentation.Controllers
 {
+    
     public class MotoristaController : Controller
     {
         private int idCaminhao;
-
+        [NoCache]
         public ActionResult Cadastro()
         {
             return View();
         }
 
         // GET: Motorista/Consulta
+        [NoCache]
         public ActionResult Consulta()
         {
             return View();
@@ -214,9 +217,9 @@ namespace Projeto.Presentation.Controllers
             conteudo.Append("<table>");
             conteudo.Append("<tr>");
             conteudo.Append("<th>Código do Motorista</th>");
-            conteudo.Append("<th>Nome do Motorista</th>");
-            conteudo.Append("<th>Cpf do Motorista</th>");
-            conteudo.Append("<th>Telefone do Motorista</th>");
+            conteudo.Append("<th>Nome</th>");
+            conteudo.Append("<th>Cpf </th>");
+            conteudo.Append("<th>Telefone</th>");
             conteudo.Append("</tr>");
 
             MotoristaRepository rep = new MotoristaRepository();

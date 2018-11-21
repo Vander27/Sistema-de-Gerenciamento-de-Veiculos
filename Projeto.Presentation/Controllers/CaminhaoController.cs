@@ -10,18 +10,22 @@ using System.Collections;
 using System.Net;
 using System.Text;
 using Projeto.Presentation.Utils;
+using Projeto.Presentation.Filters;
 
 namespace Projeto.Presentation.Controllers
 {
+    
     public class CaminhaoController : Controller
     {
         // GET: Caminhao/Cadastro..
+        [NoCache]
         public ActionResult Cadastro()
         {
             return View();
         }
 
         // GET: Caminhao/Consulta..
+        [NoCache]
         public ActionResult Consulta()
         {
             return View();
@@ -234,20 +238,20 @@ namespace Projeto.Presentation.Controllers
             //criando o conteudo do relatorio..
             StringBuilder conteudo = new StringBuilder();
 
-            conteudo.Append("<h1 class='titulo'>Relatório dos Caminhões</h1>");
+            conteudo.Append("<h1 class='titulo'>Relatório de Caminhões</h1>");
             conteudo.Append("<h4 class='titulo'>VJC TECHNOLOGY</h4>");
             conteudo.Append($"<p>Relatório gerado em: {DateTime.Now} </p>");
             conteudo.Append("<br/>");
 
             conteudo.Append("<table>");
             conteudo.Append("<tr>");
-            conteudo.Append("<th>Foto do Caminhão</th>");
-            conteudo.Append("<th>Modelo do Caminhão</th>");
+            conteudo.Append("<th>Foto</th>");
+            conteudo.Append("<th>Modelo</th>");
             conteudo.Append("<th>Marca</th>");
             
             conteudo.Append("<th>Placa</th>");
             
-            conteudo.Append("<th>KmInicial</th>");
+            conteudo.Append("<th>Km</th>");
             
             conteudo.Append("<th>Motorista</th>");
             conteudo.Append("<th>Proprietário</th>");

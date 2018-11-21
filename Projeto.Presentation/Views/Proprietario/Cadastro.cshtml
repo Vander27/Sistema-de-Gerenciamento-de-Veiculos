@@ -36,12 +36,16 @@
                             //limpar o conteudo do campo..
                             $scope.model.Nome = "";
                             $scope.ErroNome = "";
+                            $scope.model.Cnpj = "";
+                            $scope.ErroCnpj = "";
                         })
                         .catch(function (e) {
 
                             if (e.status == 400) { //BadRequest
                                 //armazenar o erro do campo nome..
                                 $scope.ErroNome = e.data.Nome;
+                                $scope.mensagem = "";
+                                $scope.ErroCnpj = e.data.Cnpj;
                                 $scope.mensagem = "";
                             }
                             else {
@@ -59,9 +63,10 @@
 }
 
 
+<!--validar cpf e cnpj-->
+<script src="~/Scripts/cpf-cnpj.js"></script>
 
-
-    <h4>Formulário de Cadastro da Empresa</h4>
+<h4>Cadastro de Empresas</h4>
 <br />
 
 <div class="row" ng-app="appProprietario" ng-controller="cadastroProprietario">
@@ -70,7 +75,7 @@
 
 
 
-        <label>Nome do Empresa:</label>
+        <label>Empresa:</label>
         <input type="text" class="form-control"
                placeholder="Digite aqui"
                ng-model="model.Nome" />
@@ -79,10 +84,17 @@
         </div>
         <br />
 
+
+
         <label>CNPJ:</label>
-        <input type="text" class="form-control"
-               placeholder="Digite aqui"
+        <input type="text" maxlength="17" class="form-control"
+               onkeydown="javascript:return aplica_mascara_cpfcnpj(this,18,event)"
+               onkeyup="javascript:return aplica_mascara_cpfcnpj(this,18,event)"
                ng-model="model.Cnpj" />
+
+
+
+
         <div>
             <strong class="text-danger">{{ErroCnpj}}</strong>
         </div>

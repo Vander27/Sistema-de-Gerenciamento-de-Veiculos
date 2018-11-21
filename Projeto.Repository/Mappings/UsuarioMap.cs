@@ -37,9 +37,7 @@ namespace Projeto.Repository.Mappings
                .HasMaxLength(50)
                .IsRequired();
 
-            Property(u => u.DataCriacao)
-               .HasColumnName("DataCriacao")
-               .IsRequired();
+          
 
 
         }

@@ -5,6 +5,9 @@
 }
 
 
+
+
+
 @section Scripts{
     <script>
 
@@ -36,7 +39,7 @@
                             //imprimir mensagem de sucesso..
                             $scope.mensagem = obj.data;
                             //limpar o conteudo do campo..
-                           
+
                             $scope.model.Email = "";
                             $scope.ErroEmail = "";
                             $scope.model.Senha = "";
@@ -46,7 +49,7 @@
 
                             if (e.status == 400) { //BadRequest
                                 //armazenar o erro do campo nome..
-                           
+
                                 $scope.ErroEmail = e.data.Email;
                                 $scope.mensagem = "";
                                 $scope.ErroSenha = e.data.Senha;
@@ -87,14 +90,14 @@
                     <p>
                         <label for="Email">Seu email</label>
                         <input id="Email" name="Email" required="required" type="text" placeholder="ex. contato@htmlecsspro.com"
-                         ng-model="model.Email" />
+                               ng-model="model.Email" />
                         <div>
                             <strong class="text-danger">{{ErroEmail}}</strong>
                         </div>
                     </p>
 
                     <p>
-                        <label for="Senha">Seu e-mail</label>
+                        <label for="Senha">Sua Senha</label>
                         <input id="Senha" name="Senha" required="required" type="password" placeholder="ex. senha"
                                ng-model="model.Senha" />
                         <div>
@@ -103,12 +106,12 @@
                     </p>
 
                     <p>
-                        <input type="checkbox" name="manterlogado" id="manterlogado" value="" />
+                        <input type="checkbox" name="manterlogado" id="manterlogado" value="Autenticar" />
                         <label for="manterlogado">Manter-me logado</label>
                     </p>
 
                     <p>
-                        <input type="submit" ng-click="consultar()" value="Logar" />
+                        <input type="submit" ng-click="Autenticar()" value="Logar" />
                     </p>
 
                     <strong>{{mensagem}}</strong>

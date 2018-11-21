@@ -109,13 +109,16 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\centralcontente.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="css\centalizar-corpo.css" />
     <Content Include="css\central.css" />
     <Content Include="css\relatorio.css" />
     <Content Include="css\sb-admin.css" />
     <Content Include="css\sb-admin.min.css" />
     <Content Include="css\Test.css" />
+    <Content Include="css\whatsapp.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Foto\CARRO.jpg" />
+    <Content Include="Foto\iconfinder_whatsapp_986960 %281%29.png" />
     <Content Include="Foto\Logo.png" />
     <Content Include="Global.asax" />
     <Content Include="js\demo\chart-area-demo.js" />
@@ -129,11 +132,13 @@
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Areas\AreaRestrita\Views\web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\cpf-cnpj.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\script-centralizar.js" />
+    <Content Include="Scripts\telefone.js" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.css" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css" />
     <Content Include="vendor\bootstrap\css\bootstrap-reboot.css" />
@@ -1542,7 +1547,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Areas\AreaRestrita\AreaRestritaAreaRegistration.cs" />
     <Compile Include="Controllers\CaminhaoController.cs" />
     <Compile Include="Controllers\MotoristaController.cs" />
     <Compile Include="Controllers\ProprietarioController.cs" />
@@ -1643,9 +1647,9 @@
     <Content Include="Views\Automovel\Cadastro.cshtml" />
     <Content Include="Views\Automovel\Consulta.cshtml" />
     <Content Include="Scripts\angular.min.js.map" />
-    <Content Include="Views\Proprietario\Sobre.cshtml" />
-    <Content Include="Views\Proprietario\Servico.cshtml" />
-    <Content Include="Views\Proprietario\Contato.cshtml" />
+    <Content Include="Views\Home\Sobre.cshtml" />
+    <Content Include="Views\Home\Servico.cshtml" />
+    <Content Include="Views\Home\Contato.cshtml" />
     <Content Include="Views\Caminhao\Cadastro.cshtml" />
     <Content Include="Views\Caminhao\Consulta.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
@@ -1672,11 +1676,7 @@
       <Name>Projeto.Util</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Areas\AreaRestrita\Controllers\" />
-    <Folder Include="Areas\AreaRestrita\Models\" />
-    <Folder Include="Areas\AreaRestrita\Views\Shared\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

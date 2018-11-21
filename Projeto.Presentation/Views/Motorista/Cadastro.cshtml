@@ -67,14 +67,17 @@
  
     }
 
+<!--validar cpf e cnpj-->
+    <script src="~/Scripts/cpf-cnpj.js"></script>
+    <script src="~/Scripts/telefone.js"></script>
 
-<h4>Formulário de Cadastro do Motorista</h4>
+<h4>Cadastro do Motoristas</h4>
 <br />
 
 <div class="row" ng-app="appMotorista" ng-controller="cadastroMotorista">
     <div class="col-md-4">
 
-        <label>Nome do Motorista:</label>
+        <label>Nome:</label>
         <input type="text" class="form-control"
                placeholder="Digite aqui"
                ng-model="model.Nome" />
@@ -83,19 +86,27 @@
         </div>
         <br />
 
+
+
         <label>CPF:</label>
-        <input type="text" class="form-control"
-               placeholder="Digite aqui"
+        <input type="text" maxlength="14" class="form-control"
+               onkeydown="javascript:return aplica_mascara_cpfcnpj(this,18,event)"
+               onkeyup="javascript:return aplica_mascara_cpfcnpj(this,18,event)"
                ng-model="model.Cpf" />
+
         <div>
             <strong class="text-danger">{{ErroCpf}}</strong>
         </div>
         <br />
 
-        <label>Telefone:</label>
-        <input type="text" class="form-control"
-               placeholder="Digite aqui"
+
+
+        <label>Telefone:</label><br />
+        <input  class="form-control" onkeypress="return mask(event, this, '(##) ####-####')" maxlength="15" placeholder=" (DDD) 0000-0000"
                ng-model="model.Telefone" />
+
+
+
         <div>
             <strong class="text-danger">{{ErroTelefone}}</strong>
         </div>

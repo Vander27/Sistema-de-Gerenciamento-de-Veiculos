@@ -76,11 +76,12 @@
     </script>
 }
 
-
+<!--validar cpf e cnpj-->
+<script src="~/Scripts/cpf-cnpj.js"></script>
 
 <div class="row">
     <div class="col-md-6">
-        <h4>Consulta de Empresa</h4>
+        <h4>Consulta de Empresas</h4>
     </div>
     <div class="col-md-6 text-right">
         <a href="/Proprietario/Relatorio" class="btn btn-dark">
@@ -105,7 +106,7 @@
 
             <div class="row">
                 <div class="col-md-4">
-                    <label>Pesquisar Empresas</label>
+                    <label>Pesquisar Empresa</label>
                     <input type="text" class="form-control"
                            ng-model="Pesquisa"
                            placeholder="Digite aqui" />
@@ -115,7 +116,7 @@
                     <select class="form-control" ng-model="Ordenacao">
                         <option value="">Escolha uma Opção</option>
                         <option value="IdProprietario">Código</option>
-                        <option value="Nome">Nome da Empresa</option>
+                        <option value="Nome">Empresa</option>
                         <option value="Cnpj">CNPJ</option>
                     </select>
                 </div>
@@ -128,7 +129,7 @@
                 <thead>
                     <tr>
                         <th>Código</th>
-                        <th>Nome da Empresa</th>
+                        <th>Empresa</th>
                         <th>CNPJ</th>
                         <th>Operações</th>
                     </tr>
@@ -182,14 +183,18 @@
                                    ng-model="proprietario.IdProprietario" />
                             <br />
 
-                            <label>Nome da Empresa:</label>
+                            <label>Empresa:</label>
                             <input type="text" class="form-control"
                                    ng-model="proprietario.Nome" />
                             <br />
 
+
                             <label>CNPJ:</label>
-                            <input type="text" class="form-control"
+                            <input type="text" maxlength="17" class="form-control"
+                                   onkeydown="javascript:return aplica_mascara_cpfcnpj(this,18,event)"
+                                   onkeyup="javascript:return aplica_mascara_cpfcnpj(this,18,event)"
                                    ng-model="proprietario.Cnpj" />
+                     
                             <br />
 
                         </div>
@@ -221,7 +226,7 @@
                             Código da Empresa: <strong>{{proprietario.IdProprietario}}</strong>
                             <br />
 
-                            Nome da Empresa: <strong>{{proprietario.Nome}}</strong>
+                            Empresa: <strong>{{proprietario.Nome}}</strong>
                             <br />
 
                             CNPJ: <strong>{{proprietario.Cnpj}}</strong>

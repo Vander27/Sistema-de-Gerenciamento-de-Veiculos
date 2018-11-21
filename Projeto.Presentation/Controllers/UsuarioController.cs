@@ -94,8 +94,6 @@ namespace Projeto.Presentation.Controllers
         }
 
 
-
-
         [HttpPost]
         public ActionResult AutenticarUsuario(UsuarioAutenticarViewModel model)
         {
@@ -104,13 +102,19 @@ namespace Projeto.Presentation.Controllers
             {
                 try
                 {
-                    //buscar o usuario no banco de dados pelo email e senha
+                    //gravar no banco.
                     UsuarioRepository rep = new UsuarioRepository();
 
                     //entidade..
-                    Usuario u = rep.Find(model.Email, Criptografia.EncriptarSenha(model.Senha));
-                  
+                    Usuario u = new Usuario();
+                    u.Email = model.Email;
+                    u.Senha = Criptografia.EncriptarSenha(model.Senha);
 
+                    rep.Insert(u); //gravando..
+
+                    ModelState.Clear(); //limpar os campos do formulário
+
+                 
                     //verifica se o usuario não é null
                     if (u != null)
                     {
@@ -124,7 +128,7 @@ namespace Projeto.Presentation.Controllers
 
 
                         //redirecionar para a área restrita
-                        return RedirectToAction("Index", "Principal",
+                        return RedirectToAction("Home", "Index",
                     new { area = "AreaRestrita" });
                     }
                     else

@@ -13,7 +13,7 @@ namespace Projeto.Entities
         public string Nome { get; set; }
         public string Email { get; set; }
         public string Senha { get; set; }
-        public DateTime DataCriacao { get; set; }
+        
 
         //construtor default [ctor] + 2x[tab]
         public Usuario()
@@ -23,19 +23,19 @@ namespace Projeto.Entities
 
         //sobrecarga de construtores (overloading)
         public Usuario(int idUsuario, string nome, string email,
-               string senha, DateTime dataCriacao)
+               string senha)
         {
             IdUsuario = idUsuario;
             Nome = nome;
             Email = email;
             Senha = senha;
-            DataCriacao = dataCriacao;
+           
         }
 
         //sobrescrita do método ToString()
         public override string ToString()
         {
-            return $"Id: {IdUsuario}, Nome: {Nome}, Email: { Email}, Data de Criação: { DataCriacao}";
+            return $"Id: {IdUsuario}, Nome: {Nome}, Email: { Email}, Senha: { Senha}, ";
         }
 
 

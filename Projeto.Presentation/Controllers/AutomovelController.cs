@@ -10,18 +10,22 @@ using System.Collections;
 using System.Net;
 using System.Text;
 using Projeto.Presentation.Utils;
+using Projeto.Presentation.Filters;
 
 namespace Projeto.Presentation.Controllers
 { 
+    
     public class AutomovelController : Controller
     {
         // GET: Automovel/Cadastro..
+        [NoCache]
         public ActionResult Cadastro()
         {
             return View();
         }
 
         // GET: Automovel/Consulta..
+        [NoCache]
         public ActionResult Consulta()
         {
             return View();
@@ -228,15 +232,15 @@ namespace Projeto.Presentation.Controllers
             //criando o conteudo do relatorio..
             StringBuilder conteudo = new StringBuilder();
 
-            conteudo.Append("<h1 class='titulo'>Relatório dos Automóveis</h1>");
+            conteudo.Append("<h1 class='titulo'>Relatório de Automóveis</h1>");
             conteudo.Append("<h4 class='titulo'>VJC TECHNOLOGY</h4>");
             conteudo.Append($"<p>Relatório gerado em: {DateTime.Now} </p>");
             conteudo.Append("<br/>");
 
             conteudo.Append("<table>");
             conteudo.Append("<tr>");
-            conteudo.Append("<th>Foto do Automóvel</th>");
-            conteudo.Append("<th>Modelo do Automóvel</th>");
+            conteudo.Append("<th>Foto</th>");
+            conteudo.Append("<th>Modelo</th>");
             conteudo.Append("<th>Marca</th>");
             
             conteudo.Append("<th>Placa</th>");

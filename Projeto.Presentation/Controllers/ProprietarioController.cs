@@ -10,45 +10,29 @@ using System.Collections;
 using System.Net;
 using System.Text;
 using Projeto.Presentation.Utils;
+using Projeto.Presentation.Filters;
 
 namespace Projeto.Presentation.Controllers
 {
+    
     public class ProprietarioController : Controller
     {
         // GET: Proprietario/Cadastro
+        [NoCache]
         public ActionResult Cadastro()
         {
             return View();
         }
 
-        // GET: Proprietario/Consulta
+        // GET: Proprietario/Cadastro
+        [NoCache]
         public ActionResult Consulta()
         {
             return View();
         }
 
-        // GET: Proprietario/Sobre
-        public ActionResult Sobre()
-        {
-            return View();
-        }
-
-
-        // GET: Proprietario/Serviços
-        public ActionResult Servico()
-        {
-            return View();
-        }
-
-        
-        // GET: Proprietario/Contato
-        public ActionResult Contato()
-        {
-            return View();
-        }
-
-
         //JsonResult -> Receber chamadas AJAX (javascript)
+
         public JsonResult CadastrarProprietario(ProprietarioCadastroViewModel model)
         {
             //verificar  se os dados da model passaram nas validações..
@@ -225,15 +209,15 @@ namespace Projeto.Presentation.Controllers
             //criando o conteudo do relatorio..
             StringBuilder conteudo = new StringBuilder();
 
-            conteudo.Append("<h1 class='titulo'>Relatório da empresa</h1>");
+            conteudo.Append("<h1 class='titulo'>Relatório de empresas</h1>");
             conteudo.Append($"<p>Relatório gerado em: {DateTime.Now} </p>");
             conteudo.Append("<br/>");
 
             conteudo.Append("<table>");
             conteudo.Append("<tr>");
-            conteudo.Append("<th>Código do Proprietário</th>");
-            conteudo.Append("<th>Nome do Proprietário</th>");
-            conteudo.Append("<th>Cnpj do Proprietário</th>");
+            conteudo.Append("<th>Código da empresa</th>");
+            conteudo.Append("<th>Nome</th>");
+            conteudo.Append("<th>Cnpj </th>");
             conteudo.Append("</tr>");
 
             ProprietarioRepository rep = new ProprietarioRepository();

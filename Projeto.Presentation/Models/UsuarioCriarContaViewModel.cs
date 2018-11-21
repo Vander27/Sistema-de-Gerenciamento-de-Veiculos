@@ -22,10 +22,6 @@ namespace Projeto.Presentation.Models
         [Required(ErrorMessage = "Informe a senha do usuário.")]
         public string Senha { get; set; }
 
-        [Compare("Senha", ErrorMessage = "Senhas não conferem.")]
-        [Required(ErrorMessage = "Confirme a senha do usuário.")]
-        public string SenhaConfirm { get; set; }
-
 
     }
 }
