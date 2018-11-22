@@ -4,3 +4,9 @@ E:\TESTANDO\Sistema-de-Controle-de-Veiculos\Projeto.Util\obj\Debug\Projeto.Util.
 E:\TESTANDO\Sistema-de-Controle-de-Veiculos\Projeto.Util\obj\Debug\Projeto.Util.csproj.CoreCompileInputs.cache
 E:\TESTANDO\Sistema-de-Controle-de-Veiculos\Projeto.Util\obj\Debug\Projeto.Util.dll
 E:\TESTANDO\Sistema-de-Controle-de-Veiculos\Projeto.Util\obj\Debug\Projeto.Util.pdb
+E:\PROJETO GIT\SITE\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Util\bin\Debug\Projeto.Util.dll
+E:\PROJETO GIT\SITE\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Util\bin\Debug\Projeto.Util.pdb
+E:\PROJETO GIT\SITE\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Util\obj\Debug\Projeto.Util.csprojAssemblyReference.cache
+E:\PROJETO GIT\SITE\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Util\obj\Debug\Projeto.Util.csproj.CoreCompileInputs.cache
+E:\PROJETO GIT\SITE\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Util\obj\Debug\Projeto.Util.dll
+E:\PROJETO GIT\SITE\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Util\obj\Debug\Projeto.Util.pdb
