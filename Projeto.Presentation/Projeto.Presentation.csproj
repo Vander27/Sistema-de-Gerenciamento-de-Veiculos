@@ -132,6 +132,17 @@
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Areas\AreaRestrita\Views\web.config" />
+    <Content Include="Areas\AreaRestrita\Views\Shared\Layout.cshtml" />
+    <Content Include="Areas\AreaRestrita\Views\Principal\Index.cshtml" />
+    <Content Include="Areas\AreaRestrita\Views\Automovel\Cadastro.cshtml" />
+    <Content Include="Areas\AreaRestrita\Views\Automovel\Consulta.cshtml" />
+    <Content Include="Areas\AreaRestrita\Views\Caminhao\Cadastro.cshtml" />
+    <Content Include="Areas\AreaRestrita\Views\Caminhao\Consulta.cshtml" />
+    <Content Include="Areas\AreaRestrita\Views\Motorista\Cadastro.cshtml" />
+    <Content Include="Areas\AreaRestrita\Views\Motorista\Consulta.cshtml" />
+    <Content Include="Areas\AreaRestrita\Views\Proprietario\Cadastro.cshtml" />
+    <Content Include="Areas\AreaRestrita\Views\Proprietario\Consulta.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\cpf-cnpj.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -1547,11 +1558,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\CaminhaoController.cs" />
-    <Compile Include="Controllers\MotoristaController.cs" />
-    <Compile Include="Controllers\ProprietarioController.cs" />
+    <Compile Include="Areas\AreaRestrita\AreaRestritaAreaRegistration.cs" />
+    <Compile Include="Areas\AreaRestrita\Controllers\AutomovelController.cs" />
+    <Compile Include="Areas\AreaRestrita\Controllers\CaminhãoController.cs" />
+    <Compile Include="Areas\AreaRestrita\Controllers\MotoristaController.cs" />
+    <Compile Include="Areas\AreaRestrita\Controllers\PrincipalController.cs" />
+    <Compile Include="Areas\AreaRestrita\Controllers\ProprietarioController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\AutomovelController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Filters\NoCache.cs" />
     <Compile Include="Global.asax.cs">
@@ -1580,8 +1593,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="packages.config" />
-    <Content Include="Views\Shared\Layout.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="vendor\bootstrap\css\bootstrap.css.map" />
     <Content Include="vendor\bootstrap\css\bootstrap.min.css.map" />
     <Content Include="vendor\bootstrap\js\bootstrap.bundle.js.map" />
@@ -1640,21 +1651,14 @@
     <Content Include="vendor\fontawesome-free\webfonts\fa-solid-900.woff2" />
     <Content Include="vendor\jquery\jquery.min.map" />
     <Content Include="vendor\jquery\jquery.slim.min.map" />
-    <Content Include="Views\Motorista\Cadastro.cshtml" />
-    <Content Include="Views\Motorista\Consulta.cshtml" />
-    <Content Include="Views\Proprietario\Cadastro.cshtml" />
-    <Content Include="Views\Proprietario\Consulta.cshtml" />
-    <Content Include="Views\Automovel\Cadastro.cshtml" />
-    <Content Include="Views\Automovel\Consulta.cshtml" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Views\Home\Sobre.cshtml" />
     <Content Include="Views\Home\Servico.cshtml" />
-    <Content Include="Views\Home\Contato.cshtml" />
-    <Content Include="Views\Caminhao\Cadastro.cshtml" />
-    <Content Include="Views\Caminhao\Consulta.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Usuario\CriarConta.cshtml" />
     <Content Include="Views\Usuario\Autenticar.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Contato.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1676,7 +1680,9 @@
       <Name>Projeto.Util</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Areas\AreaRestrita\Models\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

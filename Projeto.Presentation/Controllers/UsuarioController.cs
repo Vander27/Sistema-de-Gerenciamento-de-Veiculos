@@ -15,86 +15,62 @@ namespace Projeto.Presentation.Controllers
 {
     public class UsuarioController : Controller
     {
-
-
-        // GET: Usuario/Cadastrar/Autenticar
+        // GET: Usuario
+  
         public ActionResult Autenticar()
         {
             return View();
         }
 
-        // GET: Usuario/Cadastrar/Autenticar
+        // GET: Usuario/CriarConta
+      
         public ActionResult CriarConta()
         {
             return View();
         }
 
         
-
-
-
-
-
-
-        [HttpPost] //recebe requisições do tipo POST (FormMethod.Post)
-        public JsonResult CadastrarUsuario(UsuarioCriarContaViewModel model)
-        {
-            if (ModelState.IsValid)
-            {
-                try
+              
+                public ActionResult CadastrarUsuario(UsuarioCriarContaViewModel model)
                 {
-                    //entidade..
-                    Usuario u = new Usuario();
-                    u.Nome = model.Nome;
-                    u.Email = model.Email;
-                    u.Senha = Criptografia.EncriptarSenha(model.Senha);
-
-                    //gravar no banco..
-                    UsuarioRepository rep = new UsuarioRepository();
-                    rep.Insert(u); //gravando..
-
-                    ModelState.Clear(); //limpar os campos do formulário
-
-                    return Json($"Usuario {u.Nome}, cadastrado com sucesso.");
-
-
-                }
-                catch (Exception e)
-                {
-                    //mensagem de erro..
-                    return Json(e.Message);
-                }
-
-            }
-
-            else
-            {
-                //criar uma rotina para retornar as mensagens de erro de 
-                //validação para cada campo da classe viewModel..
-                Hashtable erros = new Hashtable();
-
-                //varrer o objeto ModelState..
-                foreach (var state in ModelState)
-                {
-                    //verificar se o elemento contem erro..
-                    if (state.Value.Errors.Count > 0)
+                    if (ModelState.IsValid)
                     {
-                        //adicionar o erro dentro do Hastable
-                        erros[state.Key] = state.Value.Errors
-                            .Select(e => e.ErrorMessage).First();
+                        try
+                        {
+                            UsuarioRepository rep = new UsuarioRepository();
+
+                            if(rep.HasEmail(model.Email))
+                            {
+                                ModelState.AddModelError("Email", errorMessage: "Este e-mail já foi cadastrado, por favor tente outro.");
+                            }
+                            else
+                            {
+                                Usuario u = new Usuario();
+                                u.Nome = model.Nome;
+                                u.Email = model.Email
+                            ;
+                                u.Senha = Criptografia.EncriptarSenha(model.Senha);
+
+                                rep.Insert(u); //gravando..
+
+                                ViewBag.Mensagem = $"Usuário {u.Nome}, cadastrado com sucesso.";
+                                ModelState.Clear(); //limpar os campos do formulário
+                            }
+
+                        }
+                        catch (Exception e)
+                        {
+                            //mensagem de erro..
+                            ViewBag.Mensagem = e.Message;
+                        }
                     }
+
+                    //retornando para a página..
+                    return View("CriarConta"); //nome da página..
                 }
+                
 
-                //retornar erros de validaçâo..STATUS 400
-                Response.StatusCode = (int)HttpStatusCode.BadRequest;
-                return Json(erros);
-
-            }
-
-        }
-
-
-        [HttpPost]
+      
         public ActionResult AutenticarUsuario(UsuarioAutenticarViewModel model)
         {
             //verificando se a model não contem erros de validação
@@ -102,19 +78,13 @@ namespace Projeto.Presentation.Controllers
             {
                 try
                 {
-                    //gravar no banco.
+                    //buscar o usuario no banco de dados pelo email e senha
                     UsuarioRepository rep = new UsuarioRepository();
 
-                    //entidade..
-                    Usuario u = new Usuario();
-                    u.Email = model.Email;
-                    u.Senha = Criptografia.EncriptarSenha(model.Senha);
 
-                    rep.Insert(u); //gravando..
+                    // entidade..
+                    Usuario u = rep.Obter(model.Email, Criptografia.EncriptarSenha(model.Senha));
 
-                    ModelState.Clear(); //limpar os campos do formulário
-
-                 
                     //verifica se o usuario não é null
                     if (u != null)
                     {
@@ -128,7 +98,7 @@ namespace Projeto.Presentation.Controllers
 
 
                         //redirecionar para a área restrita
-                        return RedirectToAction("Home", "Index",
+                        return RedirectToAction("Index", "Principal",
                     new { area = "AreaRestrita" });
                     }
                     else
@@ -146,6 +116,7 @@ namespace Projeto.Presentation.Controllers
             return View("Autenticar"); //nome da página
         }
 
+
         public ActionResult Logout()
         {
             //destruir o ticket do usuario gravado
@@ -154,8 +125,6 @@ namespace Projeto.Presentation.Controllers
 
             //redirecionar para a página de login
             return View("Autenticar");
-
-
         }
     }
 }

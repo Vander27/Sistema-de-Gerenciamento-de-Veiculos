@@ -1,0 +1,321 @@
+﻿
+@{
+    ViewBag.Title = "Consulta";
+    Layout = "~/Areas/AreaRestrita/Views/Shared/Layout.cshtml";
+}
+
+
+
+
+@section scripts{
+
+    <script>
+
+        var appCaminhao = angular.module('appCaminhao', []);
+
+        appCaminhao.controller('consultaCaminhao',
+            function ($scope, $http) {
+
+                //criando uma função para obter os motoristas..
+                $scope.consultarMotoristas = function () {
+                    $http.get('/Motorista/ConsultarMotoristas')
+                        .then(function (d) { //sucesso
+                            $scope.motoristas = d.data;
+                        })
+                        .catch(function (e) { //erro
+                            $scope.mensagem = e.data; //mensagem de erro..
+                        });
+                };
+
+                //criando uma função para obter as Proprietarios..
+                $scope.consultarProprietarios = function () {
+                    $http.get('/Proprietario/ConsultarProprietarios')
+                        .then(function (d) { //sucesso
+                            $scope.proprietarios = d.data;
+                        })
+                        .catch(function (e) { //erro
+                            $scope.mensagem = e.data;
+                        })
+                };
+
+                //função para executar a consulta de Caminhao..
+                $scope.consultar = function () {
+
+                    $http.get('/Caminhao/ConsultarCaminhoes')
+                        .then(function (d) {
+                            $scope.caminhoes = d.data;
+                        })
+                        .catch(function (e) {
+                            $scope.mensagem = e.data;
+                        });
+                };
+
+                //criando uma função para buscar 1 Automovel pelo id..
+                $scope.obter = function (id) {
+
+                    //executando o método do controller..
+                    $http.get("/Caminhao/ObterCaminhao?idCaminhao=" + id)
+                        .then(function (obj) { //sucesso
+                            $scope.caminhao = obj.data;
+                        })
+                        .catch(function (e) { //erro
+                            $scope.mensagem = e.data;
+                        });
+                };
+
+                //criando uma função para excluir 1 Caminhao pelo id..
+                $scope.excluir = function () {
+
+                    //executando o método do controller..
+                    $http.get("/Caminhao/ExcluirCaminhao?idCaminhao=" + $scope.caminhao.IdCaminhao)
+                        .then(function (obj) {
+                            //exibindo mensagem..
+                            $scope.mensagem = obj.data;
+
+                            //executando a consulta novamente..
+                            $scope.consultar();
+                        })
+                        .catch(function (e) {
+                            $scope.mensagem = e.data;
+                        });
+                };
+
+                //criando uma função para atualizar o Caminhao..
+                $scope.atualizar = function () {
+
+                    $http.post("/Caminhao/AtualizarCaminhao", $scope.caminhao)
+                        .then(function (obj) {
+                            $scope.mensagem = obj.data;
+
+                            $scope.consultar();
+                        })
+                        .catch(function (e) {
+                            $scope.mensagem = e.data;
+                        });
+                };
+
+            });
+
+    </script>
+
+}
+
+
+
+<div class="row">
+    <div class="col-md-6">
+        <h4>Consulta de Caminhões</h4>
+    </div>
+    <div class="col-md-6 text-right">
+        <a href="/Caminhao/Relatorio" class="btn btn-dark">
+            Baixar Relatório
+        </a>
+    </div>
+</div>
+<br />
+
+<div ng-app="appCaminhao" ng-controller="consultaCaminhao">
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="alert alert-info" ng-show="mensagem">
+                <strong>{{mensagem}}</strong>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+
+            <div ng-init="consultar()">
+
+                <div class="card" ng-repeat="c in caminhoes">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-">
+
+                                <img src="{{c.Foto}}" class="img-fluid">
+                            </div>
+                            <div class="col-md-10">
+                                <h3>{{c.Modelo}}</h3>
+                                Marca: {{c.Marca}}
+                                <br />
+
+                                Placa: {{c.Placa}}
+                                <br />
+
+                                Km: {{c.KmInicial}}
+                                <br />
+
+                                Motorista: {{c.NomeMotorista}}
+                                <br />
+                                Empresa: {{c.NomeProprietario}}
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary btn-sm"
+                                data-target="#janelaedicao"
+                                data-toggle="modal"
+                                ng-click="obter(c.IdCaminhao)">
+                            Atualizar dados
+                        </button>
+                        <button class="btn btn-danger btn-sm"
+                                data-target="#janelaexclusao"
+                                data-toggle="modal"
+                                ng-click="obter(c.IdCaminhao)">
+                            Excluir Caminhão
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- JANELA DE EDIÇÃO -->
+    <div id="janelaedicao" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <h4 class="text-white">Atualizar Caminhão</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <label>Código do Caminhão:</label>
+                            <input type="text" class="form-control"
+                                   ng-model="caminhao.IdCaminhao" readonly="readonly" />
+                            <br />
+
+                            <label>Marca:</label>
+                            <input type="text" class="form-control"
+                                   placeholder="Digite aqui"
+                                   ng-model="caminhao.Marca" />
+                            <br />
+
+                            <label>Modelo:</label>
+                            <input type="text" class="form-control"
+                                   placeholder="Digite aqui"
+                                   ng-model="caminhao.Modelo" />
+                            <br />
+
+
+
+
+                            <label>Placa:</label>
+                            <input type="text" class="form-control"
+                                   placeholder="Digite aqui"
+                                   ng-model="caminhao.Placa" />
+                            <br />
+
+
+
+                            <label>Km :</label>
+                            <input type="text" class="form-control"
+                                   placeholder="Digite aqui"
+                                   ng-model="caminhao.KmInicial" />
+                            <br />
+
+
+
+                        </div>
+                        <div class="col-md-6">
+
+                            <label>Selecione o Motorista:</label>
+                            <select class="form-control" ng-model="caminhao.IdMotorista" ng-init="consultarMotoristas()">
+                                <option value="">Escolha uma Opção</option>
+                                <option value="{{m.IdMotorista}}" ng-repeat="m in motoristas"
+                                        ng-selected="m.IdMotorista == caminhao.IdMotorista">
+                                    {{m.Nome}}
+                                </option>
+                            </select>
+                            <br />
+
+                            <label>Selecione a Empresa:</label>
+                            <select class="form-control" ng-model="caminhao.IdProprietario" ng-init="consultarProprietarios()">
+                                <option value="">Escolha uma Opção</option>
+                                <option value="{{p.IdProprietario}}" ng-repeat="p in proprietarios"
+                                        ng-selected="p.IdProprietario == caminhao.IdProprietario">
+                                    {{p.Nome}}
+                                </option>
+                            </select>
+                            <br />
+
+                            <label>URL da Imagem do Caminhão:</label>
+                            <input type="text" class="form-control" ng-model="caminhao.Foto" />
+                            <br />
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-warning" data-dismiss="modal">Cancelar</button>
+                    <button class="btn btn-primary"
+                            ng-click="atualizar()"
+                            data-dismiss="modal">
+                        Atualizar Dados
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JANELA DE EXCLUSÃO -->
+    <div id="janelaexclusao" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-danger">
+                    <h4 class="text-white">Excluir Caminhão</h4>
+                </div>
+                <div class="modal-body">
+
+                    <p>
+                        Deseja realmente excluir este Caminhão?
+                    </p>
+
+                    <div class="text-center">
+
+                        <img src="{{caminhao.Foto}}" width="200" />
+                        <br />
+                        <br />
+                        <h4>{{caminhao.Modelo}}</h4>
+                        Marca:
+                        {{caminhao.Marca}}
+                        <br />
+
+                        Placa:
+                        {{caminhao.Placa}}
+                        <br />
+
+                        Km:
+                        {{caminhao.KmInicial}}
+                        <br />
+
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-warning" data-dismiss="modal">Cancelar</button>
+                    <button class="btn btn-danger"
+                            ng-click="excluir()"
+                            data-dismiss="modal">
+                        Confirmar Exclusão
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
