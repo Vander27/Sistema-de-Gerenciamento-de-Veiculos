@@ -19,7 +19,6 @@ namespace Projeto.Presentation.Controllers
 
 
         // GET: Home/Consulta
-        
         public ActionResult Consulta()
         {
             return View();

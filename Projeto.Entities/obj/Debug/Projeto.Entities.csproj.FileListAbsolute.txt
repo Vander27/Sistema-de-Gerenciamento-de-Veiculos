@@ -34,3 +34,9 @@ E:\PROJETO GIT\SITE\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Entities\obj\De
 E:\PROJETO GIT\SITE\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Entities\obj\Debug\Projeto.Entities.csproj.CoreCompileInputs.cache
 E:\PROJETO GIT\SITE\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Entities\obj\Debug\Projeto.Entities.dll
 E:\PROJETO GIT\SITE\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Entities\obj\Debug\Projeto.Entities.pdb
+E:\PROJETO GIT\Cópia\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Entities\bin\Debug\Projeto.Entities.dll
+E:\PROJETO GIT\Cópia\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Entities\bin\Debug\Projeto.Entities.pdb
+E:\PROJETO GIT\Cópia\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Entities\obj\Debug\Projeto.Entities.csprojAssemblyReference.cache
+E:\PROJETO GIT\Cópia\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Entities\obj\Debug\Projeto.Entities.csproj.CoreCompileInputs.cache
+E:\PROJETO GIT\Cópia\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Entities\obj\Debug\Projeto.Entities.dll
+E:\PROJETO GIT\Cópia\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Entities\obj\Debug\Projeto.Entities.pdb

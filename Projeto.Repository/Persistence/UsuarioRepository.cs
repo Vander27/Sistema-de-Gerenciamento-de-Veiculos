@@ -11,23 +11,6 @@ namespace Projeto.Repository.Persistence
 {
     public class UsuarioRepository : GenericRepository<Usuario>
     {
-        public bool HasEmail(string email)
-        {
-            using (DataContext ctx = new DataContext())
-            {
-                return ctx.Usuario
-                          .Count(u => u.Email.Equals(email)) > 0;
-            }
-        }
-
-
-        public Usuario Obter(string email, string senha)
-        {
-            using (DataContext ctx = new DataContext())
-            {
-                return ctx.Usuario
-                          .FirstOrDefault(u => u.Email.Equals(email) && u.Senha.Equals(senha));
-            }
-        }
+       
     }
 }

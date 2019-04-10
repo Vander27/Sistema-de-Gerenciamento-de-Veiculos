@@ -1,236 +1,31 @@
 ﻿
-<!DOCTYPE html>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
 
-<html lang="pt-br">
-<head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>VJC Technology - Frota SA.</title>
-    <!-- Bootstrap core CSS-->
-    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom fonts for this template-->
-    <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <!-- Page level plugin CSS-->
-    <link href="/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
-    <!-- Custom styles for this template-->
-    <link href="/css/sb-admin.css" rel="stylesheet">
-    <link href="~/css/Test.css" rel="stylesheet" />
+<link href="~/css/centalizar-corpo.css" rel="stylesheet" />
 
-</head>
 
-<body id="page-top">
+<h2>
+    <center><font color=#ff0000>Gerenciamento de frotas de veículos</font></center>
 
-    <nav class="navbar navbar-expand navbar-dark btn-dark static-top">
-        <a class="navbar-brand mr-1" href="/Home/Index"><font color=#FFFF00><b><blink>VJC Technology&emsp;&emsp;</blink></b></font></a>
-        <button class="btn btn-link btn-sm text-danger order-1 order-sm-0" id="sidebarToggle" href="#">
 
-            <i class="fas fa-bars"></i>
+</h2>
 
-        </button>
 
 
-
-        &emsp;&emsp;
-        <a href="/Home/Sobre">
-            <span>
-                <font color=#00BFFF><b><blink>Sobre</b></blink></font>
-            </span>
-        </a>
-        &emsp;&emsp;
-
-        <a href="/Home/Servico">
-            <span>
-                <font color=#00BFFF><b><blink>Serviços</b></blink></font>
-            </span>
-        </a>
-        &emsp;&emsp;
-        <a href="/Home/Contato">
-            <span>
-                <font color=#00BFFF><b><blink>Contato</b></blink></font>
-            </span>
-        </a>
-        &emsp;&emsp;
-
-        <div style="position:absolute;top:unset;right:0">
-
-            <a id="criar" href="/Usuario/Autenticar" style=" padding: 7px;font-feature-settings: normal"><font color=#FFFF00>Acesso</font></a>
-
-
-
-            &emsp;
-
-        </div>
-
-    </nav>
-
-
-
-    <div id="wrapper">
-        <!-- Sidebar -->
-
-        <ul class="sidebar  navbar-nav">
-            <!--
-
-               <li class="nav-item">
-                   <a class="nav-link" href="/Home/Index">
-                       <i class="fas fa-fw fa-tachometer-alt"></i>
-                       <span>
-                           <font color=#00BFFF><b><blink>Página inicial</b></blink></font>
-                       </span>
-                   </a>
-
-               </li>
-
-            -->
-            <!--
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>
-                        <font color=#00BFFF><b><blink>Motorista</b></blink></font>
-                    </span>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-                    <a class="dropdown-item" href="/Motorista/Cadastro">
-                        Cadastrar Motorista
-                    </a>
-                    <a class="dropdown-item" href="/Motorista/Consulta">
-                        Consultar Motorista
-                    </a>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>
-                        <font color=#00BFFF><b><blink>Empresa</b></blink></font>
-                    </span>
-                </a>
-
-            </li>
-                          -->
-            <li class="nav-item ">
-                <a class="nav-link " href="/Home/Index" id="pagesDropdown">
-                    <i class="fas  "></i>
-                    <span>
-                        <font color=#00BFFF><b><blink>Início</b></blink></font>
-                    </span>
-                </a>
-
-            </li>
-
-        </ul>
-
-
-
-        <footer class="sticky-footer">
-
-            <div class="container my-sm-auto">
-
-
-
-
-                <div class="copyright text-center my-auto">
-                    <span><font color=#000000><img src="~/Foto/Logo.png" width=40 height=40> Copyright © 2018 VJC Technology - Desenvolvido por Vanderlei Campos</font></span>
-
-                </div>
-
-            </div>
-
-        </footer>
-
-
-
-
-
-
-
-
-
-        <div id="content-wrapper">
-            <div class="container-fluid">
-
-
-            </div>
-
-            <!-- /.container-fluid -->
-            <!-- Sticky Footer -->
-
-
-        </div>
-
-
-
-        <!---->
-
-        <div>
-
-
-            <center>
-
-                <h2 color=#ffff00> Gestão Operacional de Frota de Veículos</h2>
-
-
-            </center>
-
-            <br />
-
-            <center>&emsp;<img src="~/Foto/CARRO.jpg" width=1300 height=420></center>
-
-
-
-
-        </div>
-
-
-
-        <!---->
-        <!-- /.content-wrapper -->
-
-    </div>
+<div>
+    <center> <font color=#000000>Gestão Operacional de Frota de Veículos.</font></center>
+    
     <br />
-    <br />
-    <!-- /#wrapper -->
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="">Logout</a>
-                </div>
-            </div>
-        </div>
-    </div>
+
+    <center>&emsp;<img src="~/Foto/CARRO.jpg" width=900 height=420></center>
 
 
 
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="/vendor/jquery/jquery.min.js"></script>
-    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- Core plugin JavaScript-->
-    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
-    <!-- Custom scripts for all pages-->
-    <script src="/js/sb-admin.min.js"></script>
-
-
-
-</body>
-</html>
+</div>
+<br />
 

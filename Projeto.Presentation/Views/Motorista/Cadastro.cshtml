@@ -1,0 +1,127 @@
+﻿
+@{
+    ViewBag.Title = "Cadastro de Motorista";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+@section Scripts{
+    <script>
+
+        //criando e dando um nome a um programa angular
+        var appMotorista = angular.module('appMotorista', []);
+        //criando um controller para realizar o cadastro do motorista..
+        appMotorista.controller('cadastroMotorista',
+            function ($scope, $http) {
+
+                //declarar uma variável para resgatar o valor 
+                //digitado no campo 'nome do motorista'
+
+                $scope.model = {//Json
+                    Nome: '' //vazio..
+                     
+                };
+
+                //criando uma função que será executada
+                //quando o botão de cadastro for clicado..
+                $scope.cadastrar = function () {
+
+                    //imprimir mensagem..
+                    $scope.mensagem = "Processando, aguarde...";
+
+                    //requisição AJAX ao controller..
+                    $http.post('/Motorista/CadastrarMotorista', $scope.model)
+                        .then(function (obj) {
+
+                            //imprimir mensagem de sucesso..
+                            $scope.mensagem = obj.data;
+                            //limpar o conteudo do campo..
+                            $scope.model.Nome = "";
+                            $scope.ErroNome = "";
+                            $scope.model.Cpf = "";
+                            $scope.ErroCpf = "";
+                            $scope.model.Telefone = "";
+                            $scope.ErroTelefone = "";
+                        })
+                        .catch(function (e) {
+
+                            if (e.status == 400) { //BadRequest
+                                //armazenar o erro do campo nome..
+                                $scope.ErroNome = e.data.Nome;
+                                $scope.mensagem = "";
+                                $scope.ErroCpf = e.data.Cpf;
+                                $scope.mensagem = "";
+                                $scope.ErroTelefone = e.data.Telefone;
+                                $scope.mensagem = "";
+                            }
+                            else {
+                                //imprimir mensagem de erro..
+                                $scope.mensagem = "Erro: " + e.data;
+                            }
+
+                        });
+                };
+
+            });
+
+    </script>
+ 
+    }
+
+<!--validar cpf e cnpj-->
+    <script src="~/Scripts/cpf-cnpj.js"></script>
+    <script src="~/Scripts/telefone.js"></script>
+
+<h4>Cadastro do Motoristas</h4>
+<br />
+
+<div class="row" ng-app="appMotorista" ng-controller="cadastroMotorista">
+    <div class="col-md-4">
+
+        <label>Nome:</label>
+        <input type="text" class="form-control"
+               placeholder="Digite aqui"
+               ng-model="model.Nome" />
+        <div>
+            <strong class="text-danger">{{ErroNome}}</strong>
+        </div>
+        <br />
+
+
+
+        <label>CPF:</label>
+        <input type="text" maxlength="14" class="form-control"
+               placeholder="Ex: 000.000.000-00"
+               onkeydown="javascript:return aplica_mascara_cpfcnpj(this,18,event)"
+               onkeyup="javascript:return aplica_mascara_cpfcnpj(this,18,event)"
+               ng-model="model.Cpf" />
+
+        <div>
+            <strong class="text-danger">{{ErroCpf}}</strong>
+        </div>
+        <br />
+
+
+
+        <label>Telefone:</label><br />
+        <input  class="form-control" onkeypress="return mask(event, this, '(##) ####-####')" maxlength="15" placeholder="Ex: (DDD) 0000-0000"
+               ng-model="model.Telefone" />
+
+
+
+        <div>
+            <strong class="text-danger">{{ErroTelefone}}</strong>
+        </div>
+        <br />
+
+        <button class="btn btn-success"
+                ng-click="cadastrar()">
+            Cadastrar Motorista
+        </button>
+        <br />
+        <br />
+
+        <strong>{{mensagem}}</strong>
+
+    </div>
+    
+</div>

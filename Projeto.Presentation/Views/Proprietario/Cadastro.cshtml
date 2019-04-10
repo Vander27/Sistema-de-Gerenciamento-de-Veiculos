@@ -1,0 +1,114 @@
+﻿
+@{
+    ViewBag.Title = "Cadastro de Proprietário";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+@section Scripts{
+    <script>
+
+        //criando e dando um nome a um programa angular
+        var appProprietario = angular.module('appProprietario', []);
+        //criando um controller para realizar o cadastro do proprietario..
+        appProprietario.controller('cadastroProprietario',
+            function ($scope, $http) {
+
+                //declarar uma variável para resgatar o valor
+                //digitado no campo 'nome do proprietario'
+
+                $scope.model = {//Json
+                    Nome: '' //vazio..
+                };
+
+                //criando uma função que será executada
+                //quando o botão de cadastro for clicado..
+                $scope.cadastrar = function () {
+
+                    //imprimir mensagem..
+                    $scope.mensagem = "Processando, aguarde...";
+
+                    //requisição AJAX ao controller..
+                    $http.post('/Proprietario/CadastrarProprietario', $scope.model)
+                        .then(function (obj) {
+
+                            //imprimir mensagem de sucesso..
+                            $scope.mensagem = obj.data;
+                            //limpar o conteudo do campo..
+                            $scope.model.Nome = "";
+                            $scope.ErroNome = "";
+                            $scope.model.Cnpj = "";
+                            $scope.ErroCnpj = "";
+                        })
+                        .catch(function (e) {
+
+                            if (e.status == 400) { //BadRequest
+                                //armazenar o erro do campo nome..
+                                $scope.ErroNome = e.data.Nome;
+                                $scope.mensagem = "";
+                                $scope.ErroCnpj = e.data.Cnpj;
+                                $scope.mensagem = "";
+                            }
+                            else {
+                                //imprimir mensagem de erro..
+                                $scope.mensagem = "Erro: " + e.data;
+                            }
+
+                        });
+                };
+
+            });
+
+    </script>
+
+}
+
+
+<!--validar cpf e cnpj-->
+<script src="~/Scripts/cpf-cnpj.js"></script>
+
+<h4>Cadastro de Empresas</h4>
+<br />
+
+<div class="row" ng-app="appProprietario" ng-controller="cadastroProprietario">
+    <div class="col-md-4">
+
+
+
+
+        <label>Empresa:</label>
+        <input type="text" class="form-control"
+               placeholder="Digite aqui"
+               ng-model="model.Nome" />
+        <div>
+            <strong class="text-danger">{{ErroNome}}</strong>
+        </div>
+        <br />
+
+
+
+        <label>CNPJ:</label>
+        <input type="text" maxlength="17" class="form-control"
+               placeholder="Ex: 00.000.000/0000-00"
+               onkeydown="javascript:return aplica_mascara_cpfcnpj(this,18,event)"
+               onkeyup="javascript:return aplica_mascara_cpfcnpj(this,18,event)"
+               ng-model="model.Cnpj" />
+
+
+        
+
+        <div>
+            <strong class="text-danger">{{ErroCnpj}}</strong>
+        </div>
+        <br />
+
+        <button class="btn btn-success"
+                ng-click="cadastrar()">
+            Cadastrar Empresa
+        </button>
+        <br />
+        <br />
+
+        <strong>{{mensagem}}</strong>
+
+    </div>
+</div>

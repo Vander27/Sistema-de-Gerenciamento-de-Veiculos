@@ -82,3 +82,17 @@ E:\PROJETO GIT\SITE\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Repository\obj\
 E:\PROJETO GIT\SITE\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Repository\obj\Debug\Projeto.Repository.csproj.CopyComplete
 E:\PROJETO GIT\SITE\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Repository\obj\Debug\Projeto.Repository.dll
 E:\PROJETO GIT\SITE\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Repository\obj\Debug\Projeto.Repository.pdb
+E:\PROJETO GIT\Cópia\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Repository\bin\Debug\Projeto.Repository.dll.config
+E:\PROJETO GIT\Cópia\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Repository\bin\Debug\Projeto.Repository.dll
+E:\PROJETO GIT\Cópia\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Repository\bin\Debug\Projeto.Repository.pdb
+E:\PROJETO GIT\Cópia\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Repository\bin\Debug\EntityFramework.dll
+E:\PROJETO GIT\Cópia\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Repository\bin\Debug\EntityFramework.SqlServer.dll
+E:\PROJETO GIT\Cópia\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Repository\bin\Debug\Projeto.Entities.dll
+E:\PROJETO GIT\Cópia\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Repository\bin\Debug\Projeto.Entities.pdb
+E:\PROJETO GIT\Cópia\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Repository\bin\Debug\EntityFramework.xml
+E:\PROJETO GIT\Cópia\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Repository\bin\Debug\EntityFramework.SqlServer.xml
+E:\PROJETO GIT\Cópia\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Repository\obj\Debug\Projeto.Repository.csprojAssemblyReference.cache
+E:\PROJETO GIT\Cópia\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Repository\obj\Debug\Projeto.Repository.csproj.CoreCompileInputs.cache
+E:\PROJETO GIT\Cópia\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Repository\obj\Debug\Projeto.Repository.csproj.CopyComplete
+E:\PROJETO GIT\Cópia\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Repository\obj\Debug\Projeto.Repository.dll
+E:\PROJETO GIT\Cópia\Sistema-de-Gerenciamento-de-Veiculos\Projeto.Repository\obj\Debug\Projeto.Repository.pdb

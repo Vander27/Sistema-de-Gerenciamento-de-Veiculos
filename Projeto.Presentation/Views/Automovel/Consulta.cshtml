@@ -1,0 +1,319 @@
+﻿
+@{
+    ViewBag.Pagina = "Consulta de Automóveis";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+@section scripts{
+
+    <script>
+
+        var appAutomovel = angular.module('appAutomovel', []);
+
+        appAutomovel.controller('consultaAutomovel',
+            function ($scope, $http) {
+
+                //criando uma função para obter os motoristas..
+                $scope.consultarMotoristas = function () {
+                    $http.get('/Motorista/ConsultarMotoristas')
+                        .then(function (d) { //sucesso
+                            $scope.motoristas = d.data;
+                        })
+                        .catch(function (e) { //erro
+                            $scope.mensagem = e.data; //mensagem de erro..
+                        });
+                };
+
+                //criando uma função para obter as Proprietarios..
+                $scope.consultarProprietarios = function () {
+                    $http.get('/Proprietario/ConsultarProprietarios')
+                        .then(function (d) { //sucesso
+                            $scope.proprietarios = d.data;
+                        })
+                        .catch(function (e) { //erro
+                            $scope.mensagem = e.data;
+                        })
+                };
+
+                //função para executar a consulta de Automovel..
+                $scope.consultar = function () {
+
+                    $http.get('/Automovel/ConsultarAutomoveis')
+                        .then(function (d) {
+                            $scope.automoveis = d.data;
+                        })
+                        .catch(function (e) {
+                            $scope.mensagem = e.data;
+                        });
+                };
+
+                //criando uma função para buscar 1 Automovel pelo id..
+                $scope.obter = function (id) {
+
+                    //executando o método do controller..
+                    $http.get("/Automovel/ObterAutomovel?idAutomovel=" + id)
+                        .then(function (obj) { //sucesso
+                            $scope.automovel = obj.data;
+                        })
+                        .catch(function (e) { //erro
+                            $scope.mensagem = e.data;
+                        });
+                };
+
+                //criando uma função para excluir 1 Automovel pelo id..
+                $scope.excluir = function () {
+
+                    //executando o método do controller..
+                    $http.get("/Automovel/ExcluirAutomovel?idAutomovel=" + $scope.automovel.IdAutomovel)
+                        .then(function (obj) {
+                            //exibindo mensagem..
+                            $scope.mensagem = obj.data;
+
+                            //executando a consulta novamente..
+                            $scope.consultar();
+                        })
+                        .catch(function (e) {
+                            $scope.mensagem = e.data;
+                        });
+                };
+
+                //criando uma função para atualizar o Automovel..
+                $scope.atualizar = function () {
+
+                    $http.post("/Automovel/AtualizarAutomovel", $scope.automovel)
+                        .then(function (obj) {
+                            $scope.mensagem = obj.data;
+
+                            $scope.consultar();
+                        })
+                        .catch(function (e) {
+                            $scope.mensagem = e.data;
+                        });
+                };
+
+            });
+
+    </script>
+
+}
+
+    
+
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Consulta de Automóveis</h4>
+            </div>
+            <div class="col-md-6 text-right">
+                <a href="/Automovel/Relatorio" class="btn btn-dark">
+                    Baixar Relatório
+                </a>
+            </div>
+        </div>
+        <br />
+    
+        <div ng-app="appAutomovel" ng-controller="consultaAutomovel">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="alert alert-info" ng-show="mensagem">
+                        <strong>{{mensagem}}</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div ng-init="consultar()">
+
+                        <div class="card" ng-repeat="a in automoveis">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-3">
+
+                                        <img src="{{a.Foto}}" class="img-fluid">
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h3>{{a.Modelo}}</h3>
+                                        Marca: {{a.Marca}}
+                                        <br />
+                                        
+                                        Placa: {{a.Placa}}
+                                        <br />
+                                        
+                                        Km: {{a.KmInicial}}
+                                        <br />
+                                        
+                                        <br />
+                                        Motorista: {{a.NomeMotorista}}
+                                        <br />
+                                        Empresa: {{a.NomeProprietario}}
+                                        <br />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-primary btn-sm"
+                                        data-target="#janelaedicao"
+                                        data-toggle="modal"
+                                        ng-click="obter(a.IdAutomovel)">
+                                    Atualizar dados
+                                </button>
+                                <button class="btn btn-danger btn-sm"
+                                        data-target="#janelaexclusao"
+                                        data-toggle="modal"
+                                        ng-click="obter(a.IdAutomovel)">
+                                    Excluir Automóvel
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- JANELA DE EDIÇÃO -->
+            <div id="janelaedicao" class="modal fade">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header bg-primary">
+                            <h4 class="text-white">Atualizar Automóvel</h4>
+                        </div>
+                        <div class="modal-body">
+
+                            <div class="row">
+                                <div class="col-md-6">
+
+                                    <label>Código do Automóvel:</label>
+                                    <input type="text" class="form-control"
+                                           ng-model="automovel.IdAutomovel" readonly="readonly" />
+                                    <br />
+
+                                    <label>Marca:</label>
+                                    <input type="text" class="form-control"
+                                           placeholder="Digite aqui"
+                                           ng-model="automovel.Marca" />
+                                    <br />
+
+                                    <label>Modelo :</label>
+                                    <input type="text" class="form-control"
+                                           placeholder="Digite aqui"
+                                           ng-model="automovel.Modelo" />
+                                    <br />
+
+
+                                    <label>Placa:</label>
+                                    <input type="text" class="form-control"
+                                           placeholder="Digite aqui"
+                                           ng-model="automovel.Placa" />
+                                    <br />
+
+
+                                   
+                                    <label>Km :</label>
+                                    <input type="text" class="form-control"
+                                           placeholder="Digite aqui"
+                                           ng-model="automovel.KmInicial" />
+                                    <br />
+
+                                   
+
+                                </div>
+                                <div class="col-md-6">
+
+                                    <label>Selecione o Motorista:</label>
+                                    <select class="form-control" ng-model="automovel.IdMotorista" ng-init="consultarMotoristas()">
+                                        <option value="">Escolha uma Opção</option>
+                                        <option value="{{m.IdMotorista}}" ng-repeat="m in motoristas"
+                                                ng-selected="m.IdMotorista == automovel.IdMotorista">
+                                            {{m.Nome}}
+                                        </option>
+                                    </select>
+                                    <br />
+
+                                    <label>Selecione a Empresa:</label>
+                                    <select class="form-control" ng-model="automovel.IdProprietario" ng-init="consultarProprietarios()">
+                                        <option value="">Escolha uma Opção</option>
+                                        <option value="{{p.IdProprietario}}" ng-repeat="p in proprietarios"
+                                                ng-selected="p.IdProprietario == automovel.IdProprietario">
+                                            {{p.Nome}}
+                                        </option>
+                                    </select>
+                                    <br />
+
+                                    <label>URL da Imagem do Automóvel:</label>
+                                    <input type="text" class="form-control" ng-model="automovel.Foto" />
+                                    <br />
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-warning" data-dismiss="modal">Cancelar</button>
+                            <button class="btn btn-primary"
+                                    ng-click="atualizar()"
+                                    data-dismiss="modal">
+                                Atualizar Dados
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JANELA DE EXCLUSÃO -->
+            <div id="janelaexclusao" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header bg-danger">
+                            <h4 class="text-white">Excluir Automóvel</h4>
+                        </div>
+                        <div class="modal-body">
+
+                            <p>
+                                Deseja realmente excluir este Automóvel?
+                            </p>
+
+                            <div class="text-center">
+
+                                <img src="{{automovel.Foto}}" width="200" />
+                                <br />
+                                <br />
+                                <h4>{{automovel.Modelo}}</h4>
+                                Marca:
+                                {{automovel.Marca}}
+                                <br />
+                               
+                                Placa:
+                                {{automovel.Placa}}
+                                <br />
+                               
+                                Km:
+                                {{automovel.KmInicial}}
+                                <br />
+                               
+
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-warning" data-dismiss="modal">Cancelar</button>
+                            <button class="btn btn-danger"
+                                    ng-click="excluir()"
+                                    data-dismiss="modal">
+                                Confirmar Exclusão
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
